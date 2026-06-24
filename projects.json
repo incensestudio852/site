@@ -1,43 +1,115 @@
 [
   {
-    "projectId": "khm-holy-land",
-    "clientName": "KHM",
+    "projectId": "tkbc",
+    "clientName": "香港伯特利教會慈光堂 Hong Kong Tsz Kwong Bethel Church",
+    "title": "數碼形象與直播視覺升級 Digital Presence & Livestream",
+    "category": [
+        "Video",
+        "Graphic",
+        "Livestream"
+    ],
+    "tags": [
+      "影片製作 Video Production",
+      "直播製作 Livestream Production",
+      "視覺設計 Visual Design",
+      "網頁設計 Web Design"
+    ],
+    "keyVisual": "[Insert Key Visual Image URL]",
+    "background": {
+      "zh": "教會需要全面升級數碼形象與線上聚會體驗。",
+      "en": "The church required a comprehensive upgrade to its digital presence and online worship experience."
+    },
+    "solution": {
+      "zh": "提供一站式多媒體支援。創作敘事影片、設計跨平台直播視覺，並建置全新官方網站，大幅提升線上參與度。",
+      "en": "Delivered an end-to-end multimedia solution. We produced narrative videos, designed livestream visual assets, and developed a new website to enhance engagement."
+    },
+    "videoEmbed": "[Insert Video Embed URL or leave empty]",
+    "showcase": [
+      "[Insert Web Link/Image URL]",
+      "[Insert Livestream Screenshot URL]"
+    ]
+  },
+  {
+    "projectId": "northwest-house-of-prayer",
+    "clientName": "西北祈禱院 North West House of Prayer",
+    "title": "聲音導賞與敘事設計 Audio Guide & Narrative Design",
+    "category": [
+        "Content"
+    ],
+    "tags": [
+      "音訊製作 Audio Production",
+      "內容企劃 Content Strategy"
+    ],
+    "keyVisual": "[Insert Key Visual Image URL]",
+    "background": {
+      "zh": "西北祈禱院本身具備良好內容，但由於人手問題，未能讓參觀者有一致及多語言的講解和體驗，影響了觀眾的觀賞體驗。",
+      "en": "Although the prayer house has excellent content, staffing constraints prevented consistent, multilingual guided experiences, affecting the overall visitor experience."
+    },
+    "solution": {
+      "zh": "優化西北祈禱院本身的內容，透過人工智能及音效製作，設計並製作英普雙語聲音導賞音軌，確保觀眾的觀賞體驗。",
+      "en": "Optimized the existing content using AI and audio engineering to design and produce a bilingual (English and Mandarin) audio guide, ensuring a high-quality visitor experience."
+    },
+    "videoEmbed": "",
+    "showcase": [
+      "[Insert Before/After Video URL]",
+      "[Insert Audio Sample URL]"
+    ]
+  },
+  {
+    "projectId": "khm",
+    "clientName": "國度禾場事工有限公司 Kingdom Harvest Ministries Ltd.",
     "title": "聖地遊禱系列 Holy Land Tour & Prayer Series",
-    "category": "Video",
-    "tags": ["影片製作 Video Production", "內容剪輯 Content Editing", "頻道視覺 YouTube Visuals"],
+    "category": [
+        "Video"
+    ],
+    "tags": [
+      "影片製作 Video Production",
+      "視覺設計 Visual Design",
+      "內容企劃 Content Strategy"
+    ],
     "keyVisual": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1200&auto=format&fit=crop",
     "background": {
       "zh": "頻道需要高質素的旅遊祈禱特輯，以吸引並啟發觀眾。",
       "en": "The channel needed high-quality travel and prayer specials to engage and inspire its audience."
     },
     "solution": {
-      "zh": "全盤操刀《聖地遊禱系列》製作。透過細膩的畫面調色與流暢的剪接敘事，帶領觀眾身歷其境，有效提升 YouTube 頻道的視覺質感與內容深度。",
-      "en": "Spearheaded the production of the \"Holy Land Tour & Prayer Series.\" Through meticulous color grading and fluid storytelling, we created an immersive viewing experience that elevated the channel's visual quality and content depth."
+      "zh": "全盤操刀《聖地遊禱系列》製作。透過細膩的畫面調色與流暢的剪接敘事，帶領觀眾身歷其境。",
+      "en": "Spearheaded the production of the \"Holy Land Tour & Prayer Series.\" Through meticulous color grading and fluid storytelling, we created an immersive viewing experience."
     },
-    "videoEmbed": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoEmbed": "https://www.youtube.com/embed/51mFYNPr2rY&list=PLCM88weR6o_sb-bFTdbwmaNdyZO1MN1Nn",
     "showcase": [
       "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop"
     ]
   },
   {
-    "projectId": "tsz-kwong-church",
-    "clientName": "Tsz Kwong Church",
-    "title": "Sunday Service Live Stream Setup",
-    "category": "Live Stream",
-    "tags": ["Live Stream", "Audio Routing", "Multi-cam Setup"],
-    "keyVisual": "https://images.unsplash.com/photo-1516280440502-6c12571a8a25?q=80&w=1200&auto=format&fit=crop",
+    "projectId": "crazy-running-club",
+    "clientName": "豐山跑 Crazy Running Club",
+    "title": "品牌視覺與活動支援 Brand Visual & Event Support",
+    "category": [
+      "Branding & Events",
+      "Video"
+    ],
+    "tags": [
+      "內容企劃 Content Strategy",
+      "視覺設計 Visual Design",
+      "周邊製作 Merchandise Production",
+      "直播製作 Livestream Production"
+    ],
+    "keyVisual": "[Insert Key Visual Image URL]",
     "background": {
-      "zh": "教會需要穩定的線上直播方案以連繫無法實體出席的會眾。",
-      "en": "The church required a stable online broadcasting solution to connect with remote congregants."
+      "zh": "越野跑品牌需要全方位的視覺建立、周邊產品開發及社群活動支援。",
+      "en": "A trail running brand required comprehensive support for visual identity, merchandise development, and community events."
     },
     "solution": {
-      "zh": "設立多鏡頭直播系統與專業音訊路由，確保每週崇拜順暢無阻。",
-      "en": "Set up a multi-camera live stream system with professional audio routing to ensure flawless weekly services."
+      "zh": "從設計及製作專屬跑衣，到策劃系列節目與統籌活動直播，全面強化其專業形象。",
+      "en": "Designed custom running apparel, produced strategic content series, and managed high-quality event livestreams to strengthen professional identity."
     },
-    "videoEmbed": "",
+    "videoEmbed": "https://www.youtube.com/embed/-dVGESYqdKg&list=PLTM_EokNkwCThOEuwFw5_cwISDNLefSr4&index=4",
     "showcase": [
-      "https://images.unsplash.com/photo-1516280440502-6c12571a8a25?q=80&w=800&auto=format&fit=crop"
+      "[Insert Apparel Photo URL]",
+      "[Insert Poster Image URL]",
+      "[Insert Livestream Screenshot URL]"
     ]
   }
 ]

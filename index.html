@@ -12,12 +12,21 @@
 </head>
 <body>
 
+  <!-- Hero Section -->
   <section class="monolith bg-alabaster fade-in-section">
     <div class="content-wrapper text-center">
+      <div class="logo-placeholder fade-up">
+        <svg class="logo-svg" viewBox="0 0 80 80" width="72" height="72" aria-hidden="true">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#C5A059" stroke-width="1.2" opacity="0.35"/>
+          <text x="40" y="45" text-anchor="middle" fill="#C5A059" font-family="'Playfair Display', serif" font-size="20" font-weight="700">IS</text>
+          <line x1="22" y1="66" x2="58" y2="66" stroke="#C5A059" stroke-width="0.8" opacity="0.4"/>
+        </svg>
+      </div>
       <h1 class="serif fw-heavy fade-up">Creating upward.<br>向上創造</h1>
     </div>
   </section>
 
+  <!-- Portfolio Section -->
   <section class="monolith bg-ash text-white fade-in-section portfolio-hub" id="portfolio">
     <div class="content-wrapper">
       <header class="portfolio-hub-header text-center">
@@ -31,17 +40,20 @@
           <p class="sans portfolio-works-subtitle">作品集與過往案例</p>
         </div>
 
-        <!-- Filter Navigation -->
-        <div class="portfolio-filters sans">
-          <button class="filter-btn active" data-filter="All">All</button>
-          <button class="filter-btn" data-filter="Video">Video</button>
-          <button class="filter-btn" data-filter="Graphic">Graphic</button>
-          <button class="filter-btn" data-filter="Live Stream">Live Stream</button>
-        </div>
+        <!-- Filter Navigation (dynamically generated) -->
+        <div id="portfolio-filters" class="portfolio-filters sans"></div>
 
-        <!-- Dynamic Grid Container -->
-        <div id="portfolio-grid" class="portfolio-grid" aria-live="polite">
-          <p class="portfolio-loading sans">Loading projects…</p>
+        <!-- Carousel Gallery -->
+        <div class="portfolio-gallery">
+          <p class="portfolio-hint sans">Swipe horizontally to browse, or tap a project to explore<br>左右滑動瀏覽，點擊查看作品詳情</p>
+          <div class="portfolio-gallery-frame">
+            <button class="portfolio-arrow portfolio-arrow--left" aria-label="Previous projects">‹</button>
+            <div id="portfolio-preview" class="portfolio-preview" aria-live="polite">
+              <p class="portfolio-loading sans">Loading projects…</p>
+            </div>
+            <button class="portfolio-arrow portfolio-arrow--right" aria-label="Next projects">›</button>
+          </div>
+          <div id="portfolio-dots" class="portfolio-dots"></div>
         </div>
       </div>
     </div>
@@ -58,6 +70,7 @@
     </div>
   </div>
 
+  <!-- Closing Section -->
   <section class="monolith bg-alabaster fade-in-section">
     <div class="content-wrapper text-center">
       <h2 class="serif fw-bold fade-up">Elevating the visual landscape.</h2>
@@ -65,6 +78,7 @@
     </div>
   </section>
 
+  <!-- CTA Section -->
   <section class="monolith bg-ash text-white fade-in-section">
     <div class="content-wrapper text-center">
       <h2 class="sans fw-bold fade-up">Media built to ascend.<br>為提升而創作</h2>
