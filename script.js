@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="portfolio-card-content">
             <span class="card-client">${escapeHtml(p.clientName)}</span>
             <span class="card-title">${escapeHtml(p.title)}</span>
-            <span class="card-tags">${p.tags.map(t => `<span>#${escapeHtml(t)}</span>`).join("")}</span>
           </span>
         </button>
       `).join("");
@@ -228,11 +227,12 @@ document.addEventListener("DOMContentLoaded", () => {
     modalContent.innerHTML = `
       <div class="lightbox-header sans">
         <h3 class="lightbox-title serif fw-bold">${escapeHtml(project.title)}</h3>
+        <div class="lightbox-tags">${project.tags.map(t => `<span class="lightbox-tag">${escapeHtml(t)}</span>`).join("")}</div>
         <div class="lightbox-meta">
-          <h4>背景 Background</h4>
-          <p>${escapeHtml(project.background.zh)}<br>${escapeHtml(project.background.en)}</p>
-          <h4>解決方案 Solution</h4>
-          <p>${escapeHtml(project.solution.zh)}<br>${escapeHtml(project.solution.en)}</p>
+          <h4>Background 背景</h4>
+          <p>${escapeHtml(project.background.en)}<br>${escapeHtml(project.background.zh)}</p>
+          <h4>Solution 解決方案</h4>
+          <p>${escapeHtml(project.solution.en)}<br>${escapeHtml(project.solution.zh)}</p>
         </div>
       </div>
       <div class="lightbox-showcase">${videoHTML}${masonryHTML}</div>

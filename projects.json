@@ -1,28 +1,55 @@
 [
   {
-    "projectId": "tkbc",
+    "projectId": "tkbc60",
     "clientName": "Hong Kong Tsz Kwong Bethel Church 香港伯特利教會慈光堂",
-    "title": "Digital Presence & Livestream 數碼形象與直播視覺升級",
+    "title": "60th Anniversary: Digital Transformation & Brand Revitalization 60周年數碼轉型與品牌重塑",
     "category": [
       "Video",
-      "Graphic",
-      "Livestream",
       "Website"
     ],
     "tags": [
       "影片製作 Video Production",
-      "直播製作 Livestream Production",
       "網頁設計 Web Design",
       "視覺設計 Visual Design"
     ],
     "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/07/DSC00515.webp",
     "background": {
-      "en": "The church required a comprehensive upgrade to its digital presence and online worship experience.",
-      "zh": "教會需要全面升級數碼形象與線上聚會體驗。"
+      "en": "Coinciding with its 60th anniversary, the church needed to adapt to the post-pandemic shift toward online worship while modernizing a legacy website that hadn't seen a major update in nearly 20 years. The goal was to simplify digital workflows and elevate their online presence for a hybrid congregation.",
+      "zh": "適逢慈光堂60周年堂慶，面對後疫情時代信眾轉移至網上聚會的趨勢，慈光堂亟需全面翻新近20年未曾大幅更新的舊式網頁。目標是簡化數碼行政流程，並為線上線下的信眾提升數碼體驗。"
     },
     "solution": {
-      "en": "Delivered an end-to-end multimedia solution. We produced narrative videos, designed livestream visual assets, and developed a new website to enhance engagement.",
-      "zh": "提供一站式多媒體支援。創作敘事影片、設計跨平台直播視覺，並建置全新官方網站，大幅提升線上參與度。"
+      "en": "Delivered an end-to-end multimedia and digital upgrade. We rebuilt the official website using a modern WordPress infrastructure that seamlessly syncs with the church's mobile app, allowing congregants to receive real-time updates and creating an integrated Online-to-Offline (O2O) worship experience. Additionally, through archival research and location shooting, we produced an impactful 3-minute narrative video detailing the church's 'joy of being sent' missionary legacy, leveraging cinematic audio-visual techniques to reinspire the congregation's core mission.",
+      "zh": "提供一站式多媒體與數位升級方案。我們透過 WordPress 基礎架構重構全新慈光堂網站，並將其與教會的手機應用程式（APP）深度連結，讓會眾能透過 APP 即時掌握最新消息，打造線上與線下融合（O2O）的完整聚會體驗。此外，團隊深入翻查堂會資料並進行實地拍攝，製作了一條3分鐘的敘事影片，生動演繹教會「樂被差傳」的外展精神與歷史傳承，以視聽效果重新激發群體的使命感。"
+    }
+    },
+    "videoEmbed": "",
+    "showcase": [
+      "tkbc-web.png",
+      "https://tkbc.org.hk/"
+    ]
+  },
+  {
+    "projectId": "tkbc-livestream",
+    "clientName": "Hong Kong Tsz Kwong Bethel Church 香港伯特利教會慈光堂",
+    "title": "Livestrem Production for Online Gathering and Church Anniversary Visual 網上聚會直播及堂慶直播視覺企劃",
+    "category": [
+      "Graphic",
+      "Livestream"
+    ],
+    "tags": [
+      "直播製作 Livestream Production",
+      "視覺設計 Visual Design"
+    ],
+    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/07/DSC00515.webp",
+    "background": {
+      "en": "Amid pandemic restrictions, the church needed to pivot its traditional worship services to online broadcasts. To sustain a strong sense of community during this forced physical separation, The church team has to partner with Incense Studio to seamlessly transition their gatherings online.",
+      "zh": "因應疫情限制，慈光堂需要將傳統聚會轉為網上直播。為了在隔離期間持續維繫聚會生活，工作室需要與教會團隊緊密合作，將聚會體驗搬到線上。"
+    },
+    "solution": {
+      "en": "To elevate the church's 60th anniversary livestream, we designed a unique, community-driven standby screen. We invited congregants to handwrite different characters of the church's slogan. Our team then extracted, digitalized, and piece together these individual handwritings into a meaningful collective visual, transforming a standard broadcast element into a powerful art piece that united the congregation.",
+      "zh": "適逢教會60周年堂慶設有現場及網上雙軌直播，工作室特別策劃並邀請全體會眾共同創作直播等待畫面——由每位朋友親手寫下教會標語的各個文字，再由我們將字體逐一拆解、數位化並重新拼湊。此舉成功將傳統的直播等待畫面，轉化為凝聚眾人情感與共同使命感的視覺藝術。"
+    }
+  }
     },
     "videoEmbed": "https://www.youtube.com/embed/sUfolRB2bYQ",
     "showcase": [
@@ -33,21 +60,24 @@
   {
     "projectId": "tkcsl",
     "clientName": "Tsz Kwong Community Service Link 慈光社群服務網絡",
-    "title": "Website Trnsformation 網站升級",
+    "title":
+        "Expanding Horizon: Brand-New Website & Brand Digital Transformation 擴展服務範圍：全新網站與品牌數位轉型"
+    },
     "category": [
       "Website"
     ],
     "tags": [
-      "網頁設計 Web Design"
+      "網頁設計 Web Design",
+      "介面設計 UI/UX Design"
     ],
     "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/07/DSC00515.webp",
     "background": {
-      "en": "The church required a comprehensive upgrade to its digital presence and online worship experience.",
-      "zh": "教會需要全面升級數碼形象與線上聚會體驗。"
+      "en": "Guided by Christ's love, the organization delivers innovative, multi-faceted services to grassroots communities across all age groups. As their operations rapidly expanded from Kowloon City to multiple districts across Kowloon and the New Territories, relying on their parent organization's legacy webpage left service users struggling to find crucial assistance. A dedicated, structured digital hub was urgently needed to support their growing multi-district presence.",
+      "zh": "秉承基督的愛，機構致力為各年齡層的基層群體提供創新且多元化的社區服務。隨著服務範圍近年由九龍城區迅速擴展至新界及九龍多區，過往缺乏獨立網站、僅依賴母會網頁的模式，導致公眾與求助者難以搜尋所需資訊。因此，建立一個專屬且清晰的數位平台以配合跨區擴展，成為當務之急。"
     },
     "solution": {
-      "en": "Delivered an end-to-end multimedia solution. We produced narrative videos, designed livestream visual assets, and developed a new website to enhance engagement.",
-      "zh": "提供一站式多媒體支援。創作敘事影片、設計跨平台直播視覺，並建置全新官方網站，大幅提升線上參與度。"
+      "en": "Built a tailored, intuitive website using a cost-effective WordPress infrastructure, empowering administrative staff to manage and update content with ease. We designed a clear, logic-driven navigation system that categorizes services effectively and details the contact information and addresses of centers across all districts. On the creative front, we audited the organization's archive to select impactful imagery that embodies their mission, while modernizing their brand identity by aligning the website's color palette with their official logo.",
+      "zh": "透過高性價比的 WordPress 基礎架構建置全新獨立官方網站，大幅降低行政人員後台更新的門檻。我們重新規劃了清晰的服務分類導航，並詳細列出各區服務中心的地址與聯繫方式。視覺設計上，團隊深入翻查機構的相片庫，精選出最能展現其關懷使命的真實影像，並提煉其品牌標誌（Logo）的色彩轉化為網頁主調，讓全新網站兼具實用功能與溫度。"
     },
     "videoEmbed": "",
     "showcase": [
@@ -72,10 +102,10 @@
       "zh": "西北祈禱院本身具備良好內容，但由於人手問題，未能讓參觀者有一致及多語言的講解和體驗，影響了觀眾的觀賞體驗。"
     },
     "solution": {
-      "en": "Optimized the existing content using AI and audio engineering to design and produce a bilingual (English and Mandarin) audio guide, ensuring a high-quality visitor experience.",
-      "zh": "優化西北祈禱院本身的內容，透過人工智能及音效製作，設計並製作英普雙語聲音導賞音軌，確保觀眾的觀賞體驗。"
+      "en": "Optimized the existing content using AI and audio engineering to design and produce a trilingual (Cantonese, English and Mandarin)  audio guide, ensuring a high-quality visitor experience.",
+      "zh": "優化西北祈禱院本身的內容，透過人工智能及音效製作，設計並製作粵、英、普三語聲音導賞音軌，確保觀眾的觀賞體驗。"
     },
-    "videoEmbed": "",
+    "videoEmbed": "https://www.youtube.com/embed/vmM8T14kL5k",
     "showcase": [
       "[Insert Before/After Video URL]",
       "[Insert Audio Sample URL]"

@@ -263,7 +263,7 @@ body {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: 0.5rem;
-  padding-bottom: 0.75rem;
+  padding: 1rem 0 0.75rem 0;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--gold) transparent;
@@ -904,4 +904,24 @@ p.fade-up { transition-delay: 0.25s; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   opacity: 0.5;
+}
+
+/* --- Lightbox Tags --- */
+.lightbox-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lightbox-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--gold-light);
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  border-radius: 20px;
+  padding: 0.3rem 0.75rem;
+  letter-spacing: 0.02em;
 }
