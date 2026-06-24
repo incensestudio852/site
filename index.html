@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incense Studio | 馨香工作室</title>
+  <meta name="description" content="A boutique creative agency elevating brands through premium graphic design and video editing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Noto+Sans+TC:wght@300;600;800&family=Noto+Serif+TC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="monolith bg-alabaster fade-in-section">
+    <div class="content-wrapper text-center">
+      <h1 class="serif fw-heavy fade-up">Creating upward.<br>向上創造</h1>
+    </div>
+  </section>
+
+  <section class="monolith bg-ash text-white fade-in-section portfolio-hub" id="portfolio">
+    <div class="content-wrapper">
+      <header class="portfolio-hub-header text-center">
+        <h2 class="sans fw-bold fade-up">Design crafted with purpose.</h2>
+        <p class="sans fade-up muted-text" style="margin: 0 auto;">A boutique agency elevating brands through premium graphic design and video editing.<br>專注高品質平面設計與影片剪輯的精品創意工作室。</p>
+      </header>
+
+      <div class="portfolio-works fade-up">
+        <div class="portfolio-works-heading text-center">
+          <h3 class="sans portfolio-works-title">Portfolio &amp; Past Works</h3>
+          <p class="sans portfolio-works-subtitle">作品集與過往案例</p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="portfolio-filters sans">
+          <button class="filter-btn active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Video">Video</button>
+          <button class="filter-btn" data-filter="Graphic">Graphic</button>
+          <button class="filter-btn" data-filter="Live Stream">Live Stream</button>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div id="portfolio-grid" class="portfolio-grid" aria-live="polite">
+          <p class="portfolio-loading sans">Loading projects…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-content-wrapper">
+      <button class="lightbox-close" aria-label="Close modal">&times;</button>
+      <div id="lightbox-content" class="lightbox-body">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <section class="monolith bg-alabaster fade-in-section">
+    <div class="content-wrapper text-center">
+      <h2 class="serif fw-bold fade-up">Elevating the visual landscape.</h2>
+      <p class="sans fade-up text-ash">Crafted with devotion and excellence.<br>帶著熱忱與對卓越的追求所打造的獻禮。</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

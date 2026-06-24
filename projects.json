@@ -1,0 +1,43 @@
+[
+  {
+    "projectId": "khm-holy-land",
+    "clientName": "KHM",
+    "title": "聖地遊禱系列 Holy Land Tour & Prayer Series",
+    "category": "Video",
+    "tags": ["影片製作 Video Production", "內容剪輯 Content Editing", "頻道視覺 YouTube Visuals"],
+    "keyVisual": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1200&auto=format&fit=crop",
+    "background": {
+      "zh": "頻道需要高質素的旅遊祈禱特輯，以吸引並啟發觀眾。",
+      "en": "The channel needed high-quality travel and prayer specials to engage and inspire its audience."
+    },
+    "solution": {
+      "zh": "全盤操刀《聖地遊禱系列》製作。透過細膩的畫面調色與流暢的剪接敘事，帶領觀眾身歷其境，有效提升 YouTube 頻道的視覺質感與內容深度。",
+      "en": "Spearheaded the production of the \"Holy Land Tour & Prayer Series.\" Through meticulous color grading and fluid storytelling, we created an immersive viewing experience that elevated the channel's visual quality and content depth."
+    },
+    "videoEmbed": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "showcase": [
+      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop"
+    ]
+  },
+  {
+    "projectId": "tsz-kwong-church",
+    "clientName": "Tsz Kwong Church",
+    "title": "Sunday Service Live Stream Setup",
+    "category": "Live Stream",
+    "tags": ["Live Stream", "Audio Routing", "Multi-cam Setup"],
+    "keyVisual": "https://images.unsplash.com/photo-1516280440502-6c12571a8a25?q=80&w=1200&auto=format&fit=crop",
+    "background": {
+      "zh": "教會需要穩定的線上直播方案以連繫無法實體出席的會眾。",
+      "en": "The church required a stable online broadcasting solution to connect with remote congregants."
+    },
+    "solution": {
+      "zh": "設立多鏡頭直播系統與專業音訊路由，確保每週崇拜順暢無阻。",
+      "en": "Set up a multi-camera live stream system with professional audio routing to ensure flawless weekly services."
+    },
+    "videoEmbed": "",
+    "showcase": [
+      "https://images.unsplash.com/photo-1516280440502-6c12571a8a25?q=80&w=800&auto=format&fit=crop"
+    ]
+  }
+]
