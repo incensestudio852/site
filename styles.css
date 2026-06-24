@@ -876,6 +876,10 @@ p.fade-up { transition-delay: 0.25s; }
   justify-content: center;
 }
 
+.portfolio-card.img-fallback.hidden {
+  display: none;
+}
+
 /* --- Lightbox Tags --- */
 .lightbox-tags {
   display: flex;
