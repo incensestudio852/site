@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           data-id="${escapeHtml(p.projectId)}"
           aria-label="View ${escapeHtml(p.title)}"
         >
-          <img src="${escapeHtml(p.keyVisual)}" alt="" class="portfolio-card-image" loading="lazy">
+          <img src="${escapeHtml(p.keyVisual)}" alt="" class="portfolio-card-image" loading="lazy" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('img-fallback')">
           <span class="portfolio-card-overlay"></span>
           <span class="portfolio-card-content">
             <span class="card-client">${escapeHtml(p.clientName)}</span>
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : "";
 
     const masonryHTML = project.showcase?.length
-      ? `<div class="modal-masonry">${project.showcase.map(img => `<img src="${escapeHtml(img)}" alt="Showcase asset">`).join("")}</div>`
+      ? `<div class="modal-masonry">${project.showcase.map(img => `<img src="${escapeHtml(img)}" alt="Showcase asset" loading="lazy" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('img-fallback')">`).join("")}</div>`
       : "";
 
     modalContent.innerHTML = `

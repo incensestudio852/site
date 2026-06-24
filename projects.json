@@ -1,32 +1,58 @@
 [
   {
     "projectId": "tkbc",
-    "clientName": "香港伯特利教會慈光堂 Hong Kong Tsz Kwong Bethel Church",
-    "title": "數碼形象與直播視覺升級 Digital Presence & Livestream",
+    "clientName": "Hong Kong Tsz Kwong Bethel Church 香港伯特利教會慈光堂",
+    "title": "Digital Presence & Livestream 數碼形象與直播視覺升級",
     "category": [
-        "Video",
-        "Graphic",
-        "Livestream"
+      "Video",
+      "Graphic",
+      "Livestream",
+      "Website"
     ],
     "tags": [
       "影片製作 Video Production",
       "直播製作 Livestream Production",
-      "視覺設計 Visual Design",
-      "網頁設計 Web Design"
+      "網頁設計 Web Design",
+      "視覺設計 Visual Design"
     ],
-    "keyVisual": "[Insert Key Visual Image URL]",
+    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/07/DSC00515.webp",
     "background": {
-      "zh": "教會需要全面升級數碼形象與線上聚會體驗。",
-      "en": "The church required a comprehensive upgrade to its digital presence and online worship experience."
+      "en": "The church required a comprehensive upgrade to its digital presence and online worship experience.",
+      "zh": "教會需要全面升級數碼形象與線上聚會體驗。"
     },
     "solution": {
-      "zh": "提供一站式多媒體支援。創作敘事影片、設計跨平台直播視覺，並建置全新官方網站，大幅提升線上參與度。",
-      "en": "Delivered an end-to-end multimedia solution. We produced narrative videos, designed livestream visual assets, and developed a new website to enhance engagement."
+      "en": "Delivered an end-to-end multimedia solution. We produced narrative videos, designed livestream visual assets, and developed a new website to enhance engagement.",
+      "zh": "提供一站式多媒體支援。創作敘事影片、設計跨平台直播視覺，並建置全新官方網站，大幅提升線上參與度。"
     },
-    "videoEmbed": "[Insert Video Embed URL or leave empty]",
+    "videoEmbed": "https://www.youtube.com/embed/sUfolRB2bYQ",
     "showcase": [
-      "[Insert Web Link/Image URL]",
-      "[Insert Livestream Screenshot URL]"
+      "tkbc-web.png",
+      "https://tkbc.org.hk/"
+    ]
+  },
+  {
+    "projectId": "tkcsl",
+    "clientName": "Tsz Kwong Community Service Link 慈光社群服務網絡",
+    "title": "Website Trnsformation 網站升級",
+    "category": [
+      "Website"
+    ],
+    "tags": [
+      "網頁設計 Web Design"
+    ],
+    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/07/DSC00515.webp",
+    "background": {
+      "en": "The church required a comprehensive upgrade to its digital presence and online worship experience.",
+      "zh": "教會需要全面升級數碼形象與線上聚會體驗。"
+    },
+    "solution": {
+      "en": "Delivered an end-to-end multimedia solution. We produced narrative videos, designed livestream visual assets, and developed a new website to enhance engagement.",
+      "zh": "提供一站式多媒體支援。創作敘事影片、設計跨平台直播視覺，並建置全新官方網站，大幅提升線上參與度。"
+    },
+    "videoEmbed": "",
+    "showcase": [
+      "tkcsl-web.png",
+      "https://tkcsl.org.hk/"
     ]
   },
   {
@@ -34,20 +60,20 @@
     "clientName": "西北祈禱院 North West House of Prayer",
     "title": "聲音導賞與敘事設計 Audio Guide & Narrative Design",
     "category": [
-        "Content"
+      "Content"
     ],
     "tags": [
-      "音訊製作 Audio Production",
-      "內容企劃 Content Strategy"
+      "內容企劃 Content Strategy",
+      "音訊製作 Audio Production"
     ],
     "keyVisual": "[Insert Key Visual Image URL]",
     "background": {
-      "zh": "西北祈禱院本身具備良好內容，但由於人手問題，未能讓參觀者有一致及多語言的講解和體驗，影響了觀眾的觀賞體驗。",
-      "en": "Although the prayer house has excellent content, staffing constraints prevented consistent, multilingual guided experiences, affecting the overall visitor experience."
+      "en": "Although the prayer house has excellent content, staffing constraints prevented consistent, multilingual guided experiences, affecting the overall visitor experience.",
+      "zh": "西北祈禱院本身具備良好內容，但由於人手問題，未能讓參觀者有一致及多語言的講解和體驗，影響了觀眾的觀賞體驗。"
     },
     "solution": {
-      "zh": "優化西北祈禱院本身的內容，透過人工智能及音效製作，設計並製作英普雙語聲音導賞音軌，確保觀眾的觀賞體驗。",
-      "en": "Optimized the existing content using AI and audio engineering to design and produce a bilingual (English and Mandarin) audio guide, ensuring a high-quality visitor experience."
+      "en": "Optimized the existing content using AI and audio engineering to design and produce a bilingual (English and Mandarin) audio guide, ensuring a high-quality visitor experience.",
+      "zh": "優化西北祈禱院本身的內容，透過人工智能及音效製作，設計並製作英普雙語聲音導賞音軌，確保觀眾的觀賞體驗。"
     },
     "videoEmbed": "",
     "showcase": [
@@ -60,21 +86,21 @@
     "clientName": "國度禾場事工有限公司 Kingdom Harvest Ministries Ltd.",
     "title": "聖地遊禱系列 Holy Land Tour & Prayer Series",
     "category": [
-        "Video"
+      "Video"
     ],
     "tags": [
+      "內容企劃 Content Strategy",
       "影片製作 Video Production",
-      "視覺設計 Visual Design",
-      "內容企劃 Content Strategy"
+      "視覺設計 Visual Design"
     ],
-    "keyVisual": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1200&auto=format&fit=crop",
+    "keyVisual": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=800&auto=format&fit=crop",
     "background": {
-      "zh": "頻道需要高質素的旅遊祈禱特輯，以吸引並啟發觀眾。",
-      "en": "The channel needed high-quality travel and prayer specials to engage and inspire its audience."
+      "en": "The channel needed high-quality travel and prayer specials to engage and inspire its audience.",
+      "zh": "頻道需要高質素的旅遊祈禱特輯，以吸引並啟發觀眾。"
     },
     "solution": {
-      "zh": "全盤操刀《聖地遊禱系列》製作。透過細膩的畫面調色與流暢的剪接敘事，帶領觀眾身歷其境。",
-      "en": "Spearheaded the production of the \"Holy Land Tour & Prayer Series.\" Through meticulous color grading and fluid storytelling, we created an immersive viewing experience."
+      "en": "Spearheaded the production of the \"Holy Land Tour & Prayer Series.\" Through meticulous color grading and fluid storytelling, we created an immersive viewing experience.",
+      "zh": "全盤操刀《聖地遊禱系列》製作。透過細膩的畫面調色與流暢的剪接敘事，帶領觀眾身歷其境。"
     },
     "videoEmbed": "https://www.youtube.com/embed/51mFYNPr2rY&list=PLCM88weR6o_sb-bFTdbwmaNdyZO1MN1Nn",
     "showcase": [
@@ -92,18 +118,18 @@
     ],
     "tags": [
       "內容企劃 Content Strategy",
-      "視覺設計 Visual Design",
       "周邊製作 Merchandise Production",
-      "直播製作 Livestream Production"
+      "直播製作 Livestream Production",
+      "視覺設計 Visual Design"
     ],
     "keyVisual": "[Insert Key Visual Image URL]",
     "background": {
-      "zh": "越野跑品牌需要全方位的視覺建立、周邊產品開發及社群活動支援。",
-      "en": "A trail running brand required comprehensive support for visual identity, merchandise development, and community events."
+      "en": "A trail running brand required comprehensive support for visual identity, merchandise development, and community events.",
+      "zh": "越野跑品牌需要全方位的視覺建立、周邊產品開發及社群活動支援。"
     },
     "solution": {
-      "zh": "從設計及製作專屬跑衣，到策劃系列節目與統籌活動直播，全面強化其專業形象。",
-      "en": "Designed custom running apparel, produced strategic content series, and managed high-quality event livestreams to strengthen professional identity."
+      "en": "Designed custom running apparel, produced strategic content series, and managed high-quality event livestreams to strengthen professional identity.",
+      "zh": "從設計及製作專屬跑衣，到策劃系列節目與統籌活動直播，全面強化其專業形象。"
     },
     "videoEmbed": "https://www.youtube.com/embed/-dVGESYqdKg&list=PLTM_EokNkwCThOEuwFw5_cwISDNLefSr4&index=4",
     "showcase": [
