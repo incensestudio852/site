@@ -39,7 +39,7 @@
       "直播製作 Livestream Production",
       "視覺設計 Visual Design"
     ],
-    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/04/TKCSL_logo.png",
+    "keyVisual": "",
     "background": {
       "en": "Amid pandemic restrictions, the church needed to pivot its traditional worship services to online broadcasts. To sustain a strong sense of community during this forced physical separation, The church team has to partner with Incense Studio to seamlessly transition their gatherings online.",
       "zh": "因應疫情限制，慈光堂需要將傳統聚會轉為網上直播。為了在隔離期間持續維繫聚會生活，工作室需要與教會團隊緊密合作，將聚會體驗搬到線上。"
@@ -61,7 +61,7 @@
       "網頁設計 Web Design",
       "介面設計 UI/UX Design"
     ],
-    "keyVisual": "tkcsl-web.png",
+    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/04/TKCSL_logo.png",
     "background": {
       "en": "Guided by Christ's love, the organization delivers innovative, multi-faceted services to grassroots communities across all age groups. As their operations rapidly expanded from Kowloon City to multiple districts across Kowloon and the New Territories, relying on their parent organization's legacy webpage left service users struggling to find crucial assistance. A dedicated, structured digital hub was urgently needed to support their growing multi-district presence.",
       "zh": "秉承基督的愛，機構致力為各年齡層的基層群體提供創新且多元化的社區服務。隨著服務範圍近年由九龍城區迅速擴展至新界及九龍多區，過往缺乏獨立網站、僅依賴母會網頁的模式，導致公眾與求助者難以搜尋所需資訊。因此，建立一個專屬且清晰的數位平台以配合跨區擴展，成為當務之急。"
@@ -130,33 +130,64 @@
     ]
   },
   {
-    "projectId": "crazy-running-club",
-    "clientName": "豐山跑 Crazy Running Club",
-    "title": "品牌視覺與活動支援 Brand Visual & Event Support",
+    "projectId": "kfc-gear-check",
+    "clientName": "Crazy Running Club (KFC Gear Check)",
+    "title": "From Hundreds to 100K+ Views: YouTube Content Strategy & Channel Growth 觀看量破十萬的逆襲：YouTube 內容策略、頻道經營與直播製作",
     "category": [
-      "Branding & Events",
-      "Video"
+        "Video",
+        "Livestream"
     ],
     "tags": [
-      "內容企劃 Content Strategy",
-      "周邊製作 Merchandise Production",
-      "直播製作 Livestream Production",
-      "視覺設計 Visual Design"
+        "內容企劃 Content Strategy",
+        "影片製作 Video Production",
+        "直播製作 Livestream Production",
+        "頻道營運 Channel Growth"
     ],
-    "keyVisual": "[Insert Key Visual Image URL]",
-    "background": {
-      "en": "A trail running brand required comprehensive support for visual identity, merchandise development, and community events.",
-      "zh": "越野跑品牌需要全方位的視覺建立、周邊產品開發及社群活動支援。"
+    "keyVisual": "",
+    "background":{
+        "en": "Despite having elite trail running coaches and high-level expertise, the club struggled with digital visibility. Their early self-produced YouTube content suffered from unfocused topics, poor audio/visual quality, and a lack of algorithm optimization, resulting in stagnant engagement that rarely crossed a few hundred views.",
+        "zh": "儘管具備頂尖的越野跑實力與專業教練團隊，該跑會早期的數位知名度卻未能打開。過往自行創作的 YouTube 影片因主題缺乏核心吸引力、收音及視覺品質欠佳，且不諳平台演算法優化技巧，導致每支影片的觀看量長期停滯於數百次。"
+      },
+      "solution": {
+        "en": "From 2021 to 2024, Incense Media provided full-stack channel management, including content ideation, filming, copywriting, and custom thumbnail design. To establish the head coach as a technical authority, we restructured complex content through dynamic editing, integrating high-quality B-roll, and adding contextual graphics to accelerate pacing. Our strategic focus on data-driven content (such as a HOKA gear guide comparing 18 running shoes) successfully broke through the algorithm, sky-rocketing single-video views to over 100K+. Furthermore, we scaled the production value by launching multi-camera, synchronized livestreams for professional runner interviews.",
+        "zh": "自 2021 至 2024 年，工作室全權包辦從內容企劃、拍攝、文案到縮圖設計的一站式頻道營運。針對影片吸引力，團隊在剪接時大刀闊斧重構影片結構、加快影片節奏，並導入大量 B-roll 畫面與字卡輔助，成功將其塑造為技術型權威。透過精準的市場數據洞察（如成功打造觀看量破 10 萬的「18對HOKA跑鞋綜合評測」爆款影片），成功引爆演算法。後期更將企劃升級，以多鏡頭、現場即時同步方式直播與跑手的訪談，帶來更高質感的互動體驗。"
+      },
     },
-    "solution": {
-      "en": "Designed custom running apparel, produced strategic content series, and managed high-quality event livestreams to strengthen professional identity.",
-      "zh": "從設計及製作專屬跑衣，到策劃系列節目與統籌活動直播，全面強化其專業形象。"
-    },
-    "videoEmbed": "https://www.youtube.com/embed/-dVGESYqdKg&list=PLTM_EokNkwCThOEuwFw5_cwISDNLefSr4&index=4",
+    "videoEmbed": "",
     "showcase": [
-      "[Insert Apparel Photo URL]",
-      "[Insert Poster Image URL]",
-      "[Insert Livestream Screenshot URL]"
+      "https://www.youtube.com/watch?v=SBBFwzeM3Nk",
+      "https://www.youtube.com/embed/-dVGESYqdKg"
+    ]
+  },
+  {
+    "projectId": "crazy-running-club",
+    "clientName": "豐山跑 Crazy Running Club",
+    "title": "Trailblazing Identity: Bespoke Performance Apparel & Event Activation 傳承跑會精神：專屬跑衣設計與賽事行銷",
+    "category": [
+      "Branding & Events",
+      "Graphic"
+      "Merchandise"
+    ],
+    "tags": [
+        "社群媒體營運 Social Media Operations",
+        "周邊製作 Merchandise Production",
+        "視覺設計 Visual Design",
+        "內容企劃 Content Strategy"
+      ],
+      "keyVisual": "https://crazyrunningclub.com/wp-content/uploads/2020/01/cropped-crc_logo_black-3.png",
+      "background": {
+        "en": "Crazy Running Club (CRC) aimed to solidify its presence as a professional and tightly-knit trail running community. To elevate their brand identity ahead of major racing seasons, the club required cohesive design and tangible brand touchpoints through high-performance apparel, coupled with strategic real-time social media management during peak trail running events to maximize group visibility and engagement.",
+        "zh": "「豐山跑（Crazy Running Club； 下稱CRC）」致力於深化其作為專業且具備高凝聚力的越野跑社群形象。為了配合大型賽事季節的來臨，跑會需要一套既具社群身份認同感又吸睛的專屬周邊裝備，並配合本地核心越野賽事進行實時的社群媒體深度營運，以最大化品牌影響力與粉絲互動。"
+      },
+      "solution": {
+        "en": "Respecting and inheriting the style and core palette of CRC's original designer, we engineered two styles of premium, high-performance running singlets. Designed for demanding conditions, we partnered with a specialized manufacturer to ensure top-tier breathability and quick-dry functionality, subtly integrating the iconic silhouette of Lion Rock alongside core slogans. Debuted during the Oxfam Trailwalker, the apparel drastically boosted on-course visibility. Furthermore, during the prestigious Hong Kong Four Trails Ultra Challenge (HK4TUC), we fully managed CRC's Instagram operations, executing a real-time live-tracking strategy to update the progress and locations of the head coach and various participants. By transforming raw race data into highly engaging 'infotainment,' this real-time campaign captured massive attention across the entire running community and help CRC gain attention.",
+        "zh": "在尊重並傳承跑會原創設計師風格的基礎上，團隊尋訪工廠生產了兩款高規格機能跑步背心，嚴選上乘布料以確保極佳的透氣與快乾功能，並巧妙融入「獅子山」山脊線條與跑會口號，在「毅行者」中由選手穿著出戰，大幅提升賽道曝光率。此外，在全港矚目的殿堂級賽事「香港四徑超級挑戰（HK4TUC）」期間，團隊全程操盤 CRC 的 Instagram 官方帳號，實時追蹤並更新教練及各參賽者的最新位置與比賽進度。我們將硬核的賽事數據轉化為兼具實用與趣味的「資訊娛樂（Infotainment）」內容，成功提升 CRC 的社群知名度。"
+      },
+      "videoEmbed": "https://www.youtube.com/embed/-dVGESYqdKg&list=PLTM_EokNkwCThOEuwFw5_cwISDNLefSr4&index=4",
+      "showcase": [
+        "[Insert Apparel Photo URL]",
+        "https://www.instagram.com/p/CnxI3AiPxs6/?igsh=MTFydG9uMWdrNzE0Mg==",
+        "[Insert Livestream Screenshot URL]"
     ]
   }
 ]
