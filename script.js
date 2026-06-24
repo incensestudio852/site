@@ -220,8 +220,21 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<div class="modal-video-container"><iframe src="${project.videoEmbed}" allowfullscreen></iframe></div>`
       : "";
 
+    function isImageAsset(str) {
+      return /\.(png|jpg|jpeg|gif|webp|svg|avif)([?#]|$)/i.test(str) || !/^https?:\/\//.test(str);
+    }
+
     const masonryHTML = project.showcase?.length
-      ? `<div class="modal-masonry">${project.showcase.map(img => `<img src="${escapeHtml(img)}" alt="Showcase asset" loading="lazy" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('img-fallback')">`).join("")}</div>`
+      ? `<div class="modal-masonry">${project.showcase.map(item => {
+          if (isImageAsset(item)) {
+            return `<img src="${escapeHtml(item)}" alt="Showcase image" loading="lazy" onerror="this.onerror=null;this.style.display='none'">`;
+          }
+          const isUrl = item.startsWith("http://") || item.startsWith("https://");
+          if (isUrl) {
+            return `<a href="${escapeHtml(item)}" target="_blank" rel="noopener noreferrer" class="showcase-link">Visit Website <span class="showcase-link-icon">\u2197</span></a>`;
+          }
+          return `<div class="showcase-placeholder">${escapeHtml(item)}</div>`;
+        }).join("")}</div>`
       : "";
 
     modalContent.innerHTML = `

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#C5A059" stroke-width="1.2" opacity="0.35"/>
+  <text x="40" y="45" text-anchor="middle" fill="#C5A059" font-family="'Playfair Display', serif" font-size="20" font-weight="700">IS</text>
+  <line x1="22" y1="66" x2="58" y2="66" stroke="#C5A059" stroke-width="0.8" opacity="0.4"/>
+</svg>

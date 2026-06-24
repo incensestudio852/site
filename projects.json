@@ -20,12 +20,11 @@
     "solution": {
       "en": "Delivered an end-to-end multimedia and digital upgrade. We rebuilt the official website using a modern WordPress infrastructure that seamlessly syncs with the church's mobile app, allowing congregants to receive real-time updates and creating an integrated Online-to-Offline (O2O) worship experience. Additionally, through archival research and location shooting, we produced an impactful 3-minute narrative video detailing the church's 'joy of being sent' missionary legacy, leveraging cinematic audio-visual techniques to reinspire the congregation's core mission.",
       "zh": "提供一站式多媒體與數位升級方案。我們透過 WordPress 基礎架構重構全新慈光堂網站，並將其與教會的手機應用程式（APP）深度連結，讓會眾能透過 APP 即時掌握最新消息，打造線上與線下融合（O2O）的完整聚會體驗。此外，團隊深入翻查堂會資料並進行實地拍攝，製作了一條3分鐘的敘事影片，生動演繹教會「樂被差傳」的外展精神與歷史傳承，以視聽效果重新激發群體的使命感。"
-    }
     },
     "videoEmbed": "",
     "showcase": [
       "tkbc-web.png",
-      "https://tkbc.org.hk/"
+      "https://www.tkbc.org.hk/"
     ]
   },
   {
@@ -48,21 +47,13 @@
     "solution": {
       "en": "To elevate the church's 60th anniversary livestream, we designed a unique, community-driven standby screen. We invited congregants to handwrite different characters of the church's slogan. Our team then extracted, digitalized, and piece together these individual handwritings into a meaningful collective visual, transforming a standard broadcast element into a powerful art piece that united the congregation.",
       "zh": "適逢教會60周年堂慶設有現場及網上雙軌直播，工作室特別策劃並邀請全體會眾共同創作直播等待畫面——由每位朋友親手寫下教會標語的各個文字，再由我們將字體逐一拆解、數位化並重新拼湊。此舉成功將傳統的直播等待畫面，轉化為凝聚眾人情感與共同使命感的視覺藝術。"
-    }
-  }
     },
-    "videoEmbed": "https://www.youtube.com/embed/sUfolRB2bYQ",
-    "showcase": [
-      "tkbc-web.png",
-      "https://tkcsl.org.hk/"
-    ]
+    "videoEmbed": "https://www.youtube.com/embed/sUfolRB2bYQ"
   },
   {
     "projectId": "tkcsl",
     "clientName": "Tsz Kwong Community Service Link 慈光社群服務網絡",
-    "title":
-        "Expanding Horizon: Brand-New Website & Brand Digital Transformation 擴展服務範圍：全新網站與品牌數位轉型"
-    },
+    "title": "Expanding Horizon: Brand-New Website & Brand Digital Transformation 擴展服務範圍：全新網站與品牌數位轉型",
     "category": [
       "Website"
     ],

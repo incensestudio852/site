@@ -779,6 +779,62 @@ p.fade-up { transition-delay: 0.25s; }
   border-radius: 8px;
   break-inside: avoid;
 }
+.modal-masonry .showcase-link {
+  display: block;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: transparent;
+  border: 2px solid #C5A059;
+  border-radius: 8px;
+  color: #C5A059;
+  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  break-inside: avoid;
+  cursor: pointer;
+}
+
+.modal-masonry .showcase-link:hover,
+.modal-masonry .showcase-link:focus {
+  background: #C5A059;
+  color: #FAFAFA;
+}
+
+.modal-masonry .showcase-link-icon {
+  display: inline-block;
+  margin-left: 0.35rem;
+  transition: transform 0.2s ease;
+}
+
+.modal-masonry .showcase-link:hover .showcase-link-icon {
+  transform: translate(2px, -2px);
+}
+
+.modal-masonry .showcase-placeholder {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #E8E9EB;
+  border-radius: 8px;
+  color: #2A2A2A;
+  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+  opacity: 0.5;
+  break-inside: avoid;
+}
+
+.portfolio-hub-header h2 {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
 
 @media (max-width: 768px) {
   .modal-masonry {
