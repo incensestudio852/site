@@ -106,7 +106,7 @@
     "showcase": []
   },
   {
-    "projectId": "khm",
+    "projectId": "khm-holy-land-prayer",
     "clientName": "國度禾場事工有限公司 Kingdom Harvest Ministries Ltd.",
     "title": "聖地遊禱系列 Holy Land Tour & Prayer Series",
     "category": [
@@ -117,21 +117,20 @@
       "影片製作 Video Production",
       "視覺設計 Visual Design"
     ],
-    "keyVisual": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=800&auto=format&fit=crop",
+    "keyVisual": "image/holy-land-prayer-19.webp",
     "background": {
-      "en": "The channel wanted travel and prayer content that would connect with viewers.",
-      "zh": "頻道需要旅遊祈禱相關內容，以吸引並觸動觀眾。"
+      "en": "The channel wanted prayer content that would connect with viewers.",
+      "zh": "頻道需要吸引並觸動觀眾的祈禱相關內容。"
     },
     "solution": {
-      "en": "We produced the Holy Land Tour and Prayer Series, handling the full production pipeline including color grading and editing to give each episode a consistent look and feel.",
-      "zh": "全盤製作《聖地遊禱系列》，從調色到剪接統一風格，讓每集保持一致的視覺質感。"
+      "en": "We partnered with the ministry to transform the Holy Land Tour and Prayer series from audio-only into compelling, knowledge-based video content. From visual design, animation to final editing, we managed the entire production pipeline—delivering a series widely praised for its accessible, engaging storytelling.",
+      "zh": "工作室與事工合作，將《聖地遊禱》由純音頻內容轉化為知識型影片，全程負責視覺設計、動畫及剪輯。精準轉譯深獲信眾讚譽。"
     },
     "videoEmbed": [
       "https://www.youtube.com/embed/51mFYNPr2rY&list=PLCM88weR6o_sb-bFTdbwmaNdyZO1MN1Nn"
     ],
     "showcase": [
-      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop"
+      "image/holy-land-prayer-19.webp"
     ]
   },
   {
