@@ -14,12 +14,12 @@
     ],
     "keyVisual": "https://ugc.production.linktr.ee/nswSPr3R92aMjpFLjOxz_8J0Amw9y84UqvVBm",
     "background": {
-      "en": "Coinciding with its 60th anniversary, the church needed to adapt to the post-pandemic shift toward online worship while modernizing a legacy website that hadn't seen a major update in nearly 20 years. The goal was to simplify digital workflows and elevate their online presence for a hybrid congregation.",
-      "zh": "適逢慈光堂60周年堂慶，面對後疫情時代信眾轉移至網上聚會的趨勢，慈光堂亟需全面翻新近20年未曾大幅更新的舊式網頁。目標是簡化數碼行政流程，並為線上線下的信眾提升數碼體驗。"
+      "en": "The church was approaching its 60th anniversary with a website that had not been significantly updated in nearly 20 years. The pandemic had shifted most of their congregation online, so they needed a site that worked for both in-person and remote attendees.",
+      "zh": "慈光堂60周年堂慶前夕，原有網站已近20年未大幅更新。疫情後會眾習慣轉為線上參與，教會需要一個能同時服務實體與線上群體的網站。"
     },
     "solution": {
-      "en": "Delivered an end-to-end multimedia and digital upgrade. We rebuilt the official website using a modern WordPress infrastructure that seamlessly syncs with the church's mobile app, allowing congregants to receive real-time updates and creating an integrated Online-to-Offline (O2O) worship experience. Additionally, through archival research and location shooting, we produced an impactful 3-minute narrative video detailing the church's 'joy of being sent' missionary legacy, leveraging cinematic audio-visual techniques to reinspire the congregation's core mission.",
-      "zh": "提供一站式多媒體與數位升級方案。我們透過 WordPress 基礎架構重構全新慈光堂網站，並將其與教會的手機應用程式（APP）深度連結，讓會眾能透過 APP 即時掌握最新消息，打造線上與線下融合（O2O）的完整聚會體驗。此外，團隊深入翻查堂會資料並進行實地拍攝，製作了一條3分鐘的敘事影片，生動演繹教會「樂被差傳」的外展精神與歷史傳承，以視聽效果重新激發群體的使命感。"
+      "en": "We rebuilt the website on WordPress and synced it with the church's mobile app, so congregants receive real-time updates across both platforms. We also produced a 3-minute video tracing the church's missionary history, using archival research and location shoots to tell the story of how the church has sent people out over the decades.",
+      "zh": "以 WordPress 重建官方網站，並與教會手機應用程式同步，讓會眾即時接收最新資訊。團隊同時翻查歷史資料、實地拍攝，製作了一條3分鐘的敘事影片，記錄教會六十年來的宣教足跡。"
     },
     "videoEmbed": "",
     "showcase": [
@@ -39,14 +39,14 @@
       "直播製作 Livestream Production",
       "視覺設計 Visual Design"
     ],
-    "keyVisual": "",
+    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/04/TKCSL_logo.png",
     "background": {
-      "en": "Amid pandemic restrictions, the church needed to pivot its traditional worship services to online broadcasts. To sustain a strong sense of community during this forced physical separation, The church team has to partner with Incense Studio to seamlessly transition their gatherings online.",
-      "zh": "因應疫情限制，慈光堂需要將傳統聚會轉為網上直播。為了在隔離期間持續維繫聚會生活，工作室需要與教會團隊緊密合作，將聚會體驗搬到線上。"
+      "en": "Pandemic restrictions forced the church to move its services online. They needed help making the transition feel intentional rather than makeshift.",
+      "zh": "疫情限制下，教會需將聚會移至網上直播。工作室與教會團隊合作，確保過渡期間的聚會體驗不中斷。"
     },
     "solution": {
-      "en": "To elevate the church's 60th anniversary livestream, we designed a unique, community-driven standby screen. We invited congregants to handwrite different characters of the church's slogan. Our team then extracted, digitalized, and piece together these individual handwritings into a meaningful collective visual, transforming a standard broadcast element into a powerful art piece that united the congregation.",
-      "zh": "適逢教會60周年堂慶設有現場及網上雙軌直播，工作室特別策劃並邀請全體會眾共同創作直播等待畫面——由每位朋友親手寫下教會標語的各個文字，再由我們將字體逐一拆解、數位化並重新拼湊。此舉成功將傳統的直播等待畫面，轉化為凝聚眾人情感與共同使命感的視覺藝術。"
+      "en": "For the 60th anniversary livestream, we asked congregants to handwrite individual characters of the church's slogan. We digitized each one and pieced them together into a collective standby screen, turning what is usually a placeholder into something the whole community contributed to.",
+      "zh": "60周年堂慶直播前，我們邀請會眾各自手寫教會標語的一個字，再將所有字跡數位化、重新拼合，成為直播等待畫面。原本只是一個技術環節，變成了全體會眾的共同創作。"
     },
     "videoEmbed": "https://www.youtube.com/embed/sUfolRB2bYQ"
   },
@@ -61,14 +61,14 @@
       "網頁設計 Web Design",
       "介面設計 UI/UX Design"
     ],
-    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/04/TKCSL_logo.png",
+    "keyVisual": "tkcsl-web.png",
     "background": {
-      "en": "Guided by Christ's love, the organization delivers innovative, multi-faceted services to grassroots communities across all age groups. As their operations rapidly expanded from Kowloon City to multiple districts across Kowloon and the New Territories, relying on their parent organization's legacy webpage left service users struggling to find crucial assistance. A dedicated, structured digital hub was urgently needed to support their growing multi-district presence.",
-      "zh": "秉承基督的愛，機構致力為各年齡層的基層群體提供創新且多元化的社區服務。隨著服務範圍近年由九龍城區迅速擴展至新界及九龍多區，過往缺乏獨立網站、僅依賴母會網頁的模式，導致公眾與求助者難以搜尋所需資訊。因此，建立一個專屬且清晰的數位平台以配合跨區擴展，成為當務之急。"
+      "en": "The organization runs community services across multiple age groups. As they expanded from Kowloon City into other districts, their old setup (a page on the parent church's website) made it hard for people to find the help they needed.",
+      "zh": "機構的社區服務遍及不同年齡層，近年由九龍城擴展至多區。但一直依附母會網站，沒有獨立平台，求助者往往找不到所需資訊。"
     },
     "solution": {
-      "en": "Built a tailored, intuitive website using a cost-effective WordPress infrastructure, empowering administrative staff to manage and update content with ease. We designed a clear, logic-driven navigation system that categorizes services effectively and details the contact information and addresses of centers across all districts. On the creative front, we audited the organization's archive to select impactful imagery that embodies their mission, while modernizing their brand identity by aligning the website's color palette with their official logo.",
-      "zh": "透過高性價比的 WordPress 基礎架構建置全新獨立官方網站，大幅降低行政人員後台更新的門檻。我們重新規劃了清晰的服務分類導航，並詳細列出各區服務中心的地址與聯繫方式。視覺設計上，團隊深入翻查機構的相片庫，精選出最能展現其關懷使命的真實影像，並提煉其品牌標誌（Logo）的色彩轉化為網頁主調，讓全新網站兼具實用功能與溫度。"
+      "en": "We built a standalone WordPress site that staff can update without technical help. The navigation organizes services by category and lists each district center's contact details. We pulled images from the organization's photo archive and matched the site colors to their existing logo, so the whole thing feels like one brand.",
+      "zh": "以 WordPress 建立獨立網站，行政人員可自行更新內容。導航按服務類別分類，並列出各區中心的地址與聯絡方式。設計方面從機構相片庫選取真實影像，網站色調配合原有標誌，整體形象一致。"
     },
     "videoEmbed": "",
     "showcase": [
@@ -89,12 +89,12 @@
     ],
     "keyVisual": "[Insert Key Visual Image URL]",
     "background": {
-      "en": "Although the prayer house has excellent content, staffing constraints prevented consistent, multilingual guided experiences, affecting the overall visitor experience.",
-      "zh": "西北祈禱院本身具備良好內容，但由於人手問題，未能讓參觀者有一致及多語言的講解和體驗，影響了觀眾的觀賞體驗。"
+      "en": "The prayer house had good material but not enough staff to give every visitor a guided tour, especially in multiple languages.",
+      "zh": "西北祈禱院內容豐富，但人手不足以提供多語言導賞，影響參觀體驗。"
     },
     "solution": {
-      "en": "Optimized the existing content using AI and audio engineering to design and produce a trilingual (Cantonese, English and Mandarin)  audio guide, ensuring a high-quality visitor experience.",
-      "zh": "優化西北祈禱院本身的內容，透過人工智能及音效製作，設計並製作粵、英、普三語聲音導賞音軌，確保觀眾的觀賞體驗。"
+      "en": "We turned their existing content into a trilingual audio guide (Cantonese, English, Mandarin) using AI voice processing and audio engineering. Visitors can now go through the space at their own pace.",
+      "zh": "將現有內容轉化為粵、英、普三語聲音導賞，透過 AI 語音技術與音效製作，讓參觀者可按自己的節奏收聽講解。"
     },
     "videoEmbed": "https://www.youtube.com/embed/vmM8T14kL5k",
     "showcase": [
@@ -116,12 +116,12 @@
     ],
     "keyVisual": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=800&auto=format&fit=crop",
     "background": {
-      "en": "The channel needed high-quality travel and prayer specials to engage and inspire its audience.",
-      "zh": "頻道需要高質素的旅遊祈禱特輯，以吸引並啟發觀眾。"
+      "en": "The channel wanted travel and prayer content that would connect with viewers.",
+      "zh": "頻道需要旅遊祈禱相關內容，以吸引並觸動觀眾。"
     },
     "solution": {
-      "en": "Spearheaded the production of the \"Holy Land Tour & Prayer Series.\" Through meticulous color grading and fluid storytelling, we created an immersive viewing experience.",
-      "zh": "全盤操刀《聖地遊禱系列》製作。透過細膩的畫面調色與流暢的剪接敘事，帶領觀眾身歷其境。"
+      "en": "We produced the Holy Land Tour and Prayer Series, handling the full production pipeline including color grading and editing to give each episode a consistent look and feel.",
+      "zh": "全盤製作《聖地遊禱系列》，從調色到剪接統一風格，讓每集保持一致的視覺質感。"
     },
     "videoEmbed": "https://www.youtube.com/embed/51mFYNPr2rY&list=PLCM88weR6o_sb-bFTdbwmaNdyZO1MN1Nn",
     "showcase": [
@@ -145,12 +145,12 @@
     ],
     "keyVisual": "",
     "background": {
-      "en": "Despite having elite trail running coaches and high-level expertise, the club struggled with digital visibility. Their early self-produced YouTube content suffered from unfocused topics, poor audio/visual quality, and a lack of algorithm optimization, resulting in stagnant engagement that rarely crossed a few hundred views.",
-      "zh": "儘管具備頂尖的越野跑實力與專業教練團隊，該跑會早期的數位知名度卻未能打開。過往自行創作的 YouTube 影片因主題缺乏核心吸引力、收音及視覺品質欠佳，且不諳平台演算法優化技巧，導致每支影片的觀看量長期停滯於數百次。"
+      "en": "The running club had top-tier coaching but almost no online presence. Their early YouTube videos suffered from muddy audio, inconsistent visuals, and unfocused topics, with most struggling to reach even a few hundred views.",
+      "zh": "跑會雖有頂尖教練，數位知名度卻幾乎空白。早期 YouTube 影片主題鬆散、收音與畫面質素參差，每條影片觀看量長期停留數百次。"
     },
     "solution": {
-      "en": "From 2021 to 2024, Incense Media provided full-stack channel management, including content ideation, filming, copywriting, and custom thumbnail design. To establish the head coach as a technical authority, we restructured complex content through dynamic editing, integrating high-quality B-roll, and adding contextual graphics to accelerate pacing. Our strategic focus on data-driven content (such as a HOKA gear guide comparing 18 running shoes) successfully broke through the algorithm, sky-rocketing single-video views to over 100K+. Furthermore, we scaled the production value by launching multi-camera, synchronized livestreams for professional runner interviews.",
-      "zh": "自 2021 至 2024 年，工作室全權包辦從內容企劃、拍攝、文案到縮圖設計的一站式頻道營運。針對影片吸引力，團隊在剪接時大刀闊斧重構影片結構、加快影片節奏，並導入大量 B-roll 畫面與字卡輔助，成功將其塑造為技術型權威。透過精準的市場數據洞察（如成功打造觀看量破 10 萬的「18對HOKA跑鞋綜合評測」爆款影片），成功引爆演算法。後期更將企劃升級，以多鏡頭、現場即時同步方式直播與跑手的訪談，帶來更高質感的互動體驗。"
+      "en": "From 2021 to 2024, we ran the channel end to end: planning, filming, writing, and designing thumbnails. We tightened the editing, added B-roll and on-screen graphics, and made the head coach the channel's technical voice. One gear guide comparing 18 HOKA shoes crossed 100K views. Later we added multi-camera livestream interviews with pro runners.",
+      "zh": "2021至2024年間，工作室全面營運頻道：內容企劃、拍攝、撰稿、縮圖設計一手包辦。剪接上加快節奏、加入B-roll與圖像輔助，將總教練定位為技術權威。一條18對HOKA跑鞋評測影片突破10萬觀看，後期更升級至多機直播訪問專業跑手。"
     },
     "videoEmbed": "",
     "showcase": [
@@ -175,12 +175,12 @@
     ],
     "keyVisual": "https://crazyrunningclub.com/wp-content/uploads/2020/01/cropped-crc_logo_black-3.png",
     "background": {
-      "en": "Crazy Running Club (CRC) aimed to solidify its presence as a professional and tightly-knit trail running community. To elevate their brand identity ahead of major racing seasons, the club required cohesive design and tangible brand touchpoints through high-performance apparel, coupled with strategic real-time social media management during peak trail running events to maximize group visibility and engagement.",
-      "zh": "「豐山跑（Crazy Running Club； 下稱CRC）」致力於深化其作為專業且具備高凝聚力的越野跑社群形象。為了配合大型賽事季節的來臨，跑會需要一套既具社群身份認同感又吸睛的專屬周邊裝備，並配合本地核心越野賽事進行實時的社群媒體深度營運，以最大化品牌影響力與粉絲互動。"
+      "en": "Crazy Running Club (CRC) wanted to look and feel like a serious trail running community during race season. They needed custom apparel for visibility on the trails and someone to handle social media during the big events.",
+      "zh": "豐山跑（CRC）希望在賽季中以專業越野跑社群的形象示人，需要專屬跑衣提升賽道辨識度，以及賽事期間的社交媒體營運。"
     },
     "solution": {
-      "en": "Respecting and inheriting the style and core palette of CRC's original designer, we engineered two styles of premium, high-performance running singlets. Designed for demanding conditions, we partnered with a specialized manufacturer to ensure top-tier breathability and quick-dry functionality, subtly integrating the iconic silhouette of Lion Rock alongside core slogans. Debuted during the Oxfam Trailwalker, the apparel drastically boosted on-course visibility. Furthermore, during the prestigious Hong Kong Four Trails Ultra Challenge (HK4TUC), we fully managed CRC's Instagram operations, executing a real-time live-tracking strategy to update the progress and locations of the head coach and various participants. By transforming raw race data into highly engaging 'infotainment,' this real-time campaign captured massive attention across the entire running community and help CRC gain attention.",
-      "zh": "在尊重並傳承跑會原創設計師風格的基礎上，團隊尋訪工廠生產了兩款高規格機能跑步背心，嚴選上乘布料以確保極佳的透氣與快乾功能，並巧妙融入「獅子山」山脊線條與跑會口號，在「毅行者」中由選手穿著出戰，大幅提升賽道曝光率。此外，在全港矚目的殿堂級賽事「香港四徑超級挑戰（HK4TUC）」期間，團隊全程操盤 CRC 的 Instagram 官方帳號，實時追蹤並更新教練及各參賽者的最新位置與比賽進度。我們將硬核的賽事數據轉化為兼具實用與趣味的「資訊娛樂（Infotainment）」內容，成功提升 CRC 的社群知名度。"
+      "en": "We kept the club's existing colors and designed two singlet styles, working with a manufacturer to get the breathability right for long trail runs. The Lion Rock silhouette runs across the chest with the club slogan underneath. Runners wore them during Oxfam Trailwalker, and visibility on the course was night and day. During HK4TUC, we ran CRC's Instagram with live tracking of the coach and runners, turning race data into posts the local running community actually followed.",
+      "zh": "保留跑會原有配色，設計了兩款跑步背心，與廠商合作確保透氣快乾適合長途越野。「獅子山」線條橫跨胸前，配上跑會口號。選手在毅行者中穿著出戰，賽道辨識度大幅提升。HK4TUC 期間全程營運跑會 Instagram，實時追蹤教練與選手位置，將賽事數據轉化為跑界關注的內容。"
     },
     "videoEmbed": "https://www.youtube.com/embed/-dVGESYqdKg&list=PLTM_EokNkwCThOEuwFw5_cwISDNLefSr4&index=4",
     "showcase": [

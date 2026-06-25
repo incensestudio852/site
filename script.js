@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ── DOM Refs ──────────────────────────────────────────────
-  const preview      = document.getElementById("portfolio-preview");
+  const preview         = document.getElementById("portfolio-preview");
   const filtersContainer = document.getElementById("portfolio-filters");
-  const modal        = document.getElementById("lightbox-modal");
-  const modalClose   = document.querySelector(".lightbox-close");
-  const modalContent = document.getElementById("lightbox-content");
-  const modalOverlay = document.querySelector(".lightbox-overlay");
-  const dotsContainer = document.getElementById("portfolio-dots");
-  const arrowLeft    = document.querySelector(".portfolio-arrow--left");
-  const arrowRight   = document.querySelector(".portfolio-arrow--right");
+  const modal           = document.getElementById("lightbox-modal");
+  const modalClose      = document.querySelector(".lightbox-close");
+  const modalContent    = document.getElementById("lightbox-content");
+  const modalOverlay    = document.querySelector(".lightbox-overlay");
+  const dotsContainer   = document.getElementById("portfolio-dots");
+  const arrowLeft       = document.querySelector(".portfolio-arrow--left");
+  const arrowRight      = document.querySelector(".portfolio-arrow--right");
+  const nav             = document.querySelector(".site-nav");
+  const navToggle       = document.querySelector(".site-nav-toggle");
+  const navLinks        = document.querySelector(".site-nav-links");
 
   let allProjects = [];
+  let rafPending  = false;
+  let lastScrollY = window.scrollY;
 
   // ── Helpers ───────────────────────────────────────────────
   function escapeHtml(v) {
@@ -18,27 +23,101 @@ document.addEventListener("DOMContentLoaded", () => {
     return String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
   }
 
-  // ── Scroll Animations ────────────────────────────────────
+  // ── Mobile Nav Toggle ─────────────────────────────────────
+  navToggle?.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  // Close mobile nav on link click
+  navLinks?.querySelectorAll(".site-nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // ── Nav scroll shadow ─────────────────────────────────────
+  function updateNavOnScroll() {
+    if (window.scrollY > 10) {
+      nav.classList.add("is-scrolled");
+    } else {
+      nav.classList.remove("is-scrolled");
+    }
+  }
+
+  // ── Parallax effect on monolith backgrounds ───────────────
+  function updateParallax() {
+    if (rafPending) return;
+    rafPending = true;
+    requestAnimationFrame(() => {
+      rafPending = false;
+      const sections = document.querySelectorAll(".monolith");
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const viewportMid = window.innerHeight / 2;
+        const sectionMid = rect.top + rect.height / 2;
+        const offset = (sectionMid - viewportMid) * 0.03;
+        const bgEl = section.querySelector(".incense-smoke");
+        if (bgEl) {
+          bgEl.style.transform = `translateY(${offset}px)`;
+        }
+      });
+    });
+  }
+
+  // ── Scroll-driven reveal with variable thresholds ─────────
   let scrollObserver;
   function initScrollAnimations() {
+    // Enhanced observer with progressive thresholds
     if (!scrollObserver) {
       scrollObserver = new IntersectionObserver(
-        entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("is-visible"); }); },
-        { threshold: 0.15 }
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+
+              // For hero, also add a secondary class for scale-in children
+              if (entry.target.id === "hero") {
+                entry.target.classList.add("hero-revealed");
+              }
+            }
+          });
+        },
+        {
+          threshold: [0.05, 0.15, 0.3],
+          rootMargin: "0px 0px -40px 0px"
+        }
       );
     }
+
     document.querySelectorAll(".fade-in-section:not([data-observed])").forEach(el => {
       el.dataset.observed = "true";
       scrollObserver.observe(el);
     });
   }
 
+  // ── Smooth scroll for nav links ───────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", e => {
+      const target = document.querySelector(anchor.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
 
-  // ── Build Dynamic Filter Buttons ───────────────────────
+  // ── Bind scroll handlers ──────────────────────────────────
+  window.addEventListener("scroll", () => {
+    updateNavOnScroll();
+    updateParallax();
+  }, { passive: true });
+
+  // ── Build Dynamic Filter Buttons ─────────────────────────
   function buildFilters(projects) {
     if (!filtersContainer) return;
 
-    // Extract unique categories (flatten arrays, dedupe, sort)
     const cats = [...new Set(projects.flatMap(p =>
       Array.isArray(p.category) ? p.category : [p.category]
     ))].sort();
@@ -46,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
     filtersContainer.innerHTML = '<button class="filter-btn active" data-filter="All">All</button>' +
       cats.map(c => `<button class="filter-btn" data-filter="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join("");
 
-    // Delegate click on the container
     filtersContainer.addEventListener("click", e => {
       const btn = e.target.closest(".filter-btn");
       if (!btn) return;
@@ -60,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderGallery(projects) {
     if (!preview) return;
 
-    // Cards
     preview.innerHTML = projects
       .map(p => `
         <button type="button"
@@ -70,6 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
           aria-label="View ${escapeHtml(p.title)}"
         >
           <img src="${escapeHtml(p.keyVisual)}" alt="" class="portfolio-card-image" loading="lazy" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('img-fallback')">
+          <span class="card-type-label">${escapeHtml(Array.isArray(p.category) ? p.category[0] : p.category)}</span>
           <span class="portfolio-card-overlay"></span>
           <span class="portfolio-card-content">
             <span class="card-client">${escapeHtml(p.clientName)}</span>
@@ -78,12 +156,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </button>
       `).join("");
 
-    // Click → lightbox
     preview.querySelectorAll(".portfolio-card").forEach(card => {
       card.addEventListener("click", () => openLightbox(card.dataset.id));
     });
 
-    // Dots
     renderDots(projects.length);
     syncActiveDot();
   }
@@ -109,79 +185,69 @@ document.addEventListener("DOMContentLoaded", () => {
     return card.offsetWidth + gap;
   }
 
-  function scrollToCard(index) {
-    const cards = preview.querySelectorAll(".portfolio-card");
-    if (!cards.length || index < 0) index = 0;
-    if (index >= cards.length) index = cards.length - 1;
-    cards[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
-  }
-
+  let isScrolling = false;
   function scrollByStep(dir) {
+    if (isScrolling) return;
+    isScrolling = true;
     const step = getCardWidth();
     preview.scrollBy({ left: dir * step, behavior: "smooth" });
+    setTimeout(() => { isScrolling = false; }, 350);
+  }
+
+  function scrollToCard(index) {
+    const cards = preview.querySelectorAll(".portfolio-card:not(.hidden)");
+    const target = cards[index];
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
   }
 
   function syncActiveDot() {
     if (!dotsContainer) return;
     const dots = dotsContainer.querySelectorAll(".portfolio-dot");
-    const cards = preview.querySelectorAll(".portfolio-card");
-    if (!dots.length || !cards.length) return;
+    const cards = preview.querySelectorAll(".portfolio-card:not(.hidden)");
+    let activeIdx = 0;
 
-    const scrollLeft = preview.scrollLeft;
-    const previewWidth = preview.clientWidth;
-    const totalScroll = preview.scrollWidth - previewWidth;
-
-    if (totalScroll <= 0) {
-      dots.forEach(d => d.classList.remove("is-active"));
-      dots[0]?.classList.add("is-active");
-      return;
+    for (let i = 0; i < cards.length; i++) {
+      const rect = cards[i].getBoundingClientRect();
+      const frame = preview.getBoundingClientRect();
+      if (rect.left >= frame.left - rect.width * 0.3) {
+        activeIdx = i;
+        break;
+      }
     }
 
-    // Determine active index by card position
-    let activeIndex = 0;
-    const gap = parseFloat(getComputedStyle(preview).gap) || 0;
-    let minDist = Infinity;
-    cards.forEach((card, i) => {
-      const dist = Math.abs(card.offsetLeft - scrollLeft);
-      if (dist < minDist) { minDist = dist; activeIndex = i; }
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("is-active", i === activeIdx);
     });
-
-    dots.forEach((d, i) => d.classList.toggle("is-active", i === activeIndex));
-
-    // Toggle arrow visibility
-    if (arrowLeft)  arrowLeft.classList.toggle("is-hidden", activeIndex === 0);
-    if (arrowRight) arrowRight.classList.toggle("is-hidden", activeIndex >= cards.length - 1);
   }
 
-  // Throttled scroll sync
-  let scrollTick = false;
+  let previewScrollTimer;
   function onPreviewScroll() {
-    if (!scrollTick) {
-      requestAnimationFrame(() => { syncActiveDot(); scrollTick = false; });
-      scrollTick = true;
-    }
+    clearTimeout(previewScrollTimer);
+    previewScrollTimer = setTimeout(syncActiveDot, 60);
   }
 
   // ── Filter Logic ─────────────────────────────────────────
-  function applyFilter(filterValue) {
+  function applyFilter(filter) {
     const cards = preview.querySelectorAll(".portfolio-card");
     let visibleCount = 0;
+
     cards.forEach(card => {
-      const match = filterValue === "All" || card.dataset.category.split(",").includes(filterValue);
-      card.classList.toggle("hidden", !match);
-      if (match) visibleCount++;
+      const cats = (card.dataset.category || "").split(",");
+      if (filter === "All" || cats.includes(filter)) {
+        card.classList.remove("hidden");
+        visibleCount++;
+      } else {
+        card.classList.add("hidden");
+      }
     });
 
-    // Rebuild dots for visible cards only
     renderDots(visibleCount);
 
-    // Update dot click targets to skip hidden cards
     const visibleCards = preview.querySelectorAll(".portfolio-card:not(.hidden)");
     const newDots = dotsContainer.querySelectorAll(".portfolio-dot");
     newDots.forEach((dot, i) => {
       dot.replaceWith(dot.cloneNode(true));
     });
-    // Re-attach dot listeners
     dotsContainer.querySelectorAll(".portfolio-dot").forEach((dot, i) => {
       dot.addEventListener("click", () => {
         const target = preview.querySelectorAll(".portfolio-card:not(.hidden)")[i];
@@ -189,19 +255,19 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Reset scroll
     preview.scrollTo({ left: 0, behavior: "smooth" });
     syncActiveDot();
   }
-
-  // Filters are bound via delegation in buildFilters()
 
   // ── Arrow Button Clicks ──────────────────────────────────
   if (arrowLeft)  arrowLeft.addEventListener("click", () => scrollByStep(-1));
   if (arrowRight) arrowRight.addEventListener("click", () => scrollByStep(1));
 
   // ── Preview scroll events ────────────────────────────────
-  if (preview) preview.addEventListener("scroll", onPreviewScroll, { passive: true });
+  if (preview) {
+    preview.addEventListener("scroll", onPreviewScroll, { passive: true });
+    preview.addEventListener("scrollend", syncActiveDot, { passive: true });
+  }
 
   // ── Keyboard nav ─────────────────────────────────────────
   document.addEventListener("keydown", e => {
@@ -243,11 +309,12 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="lightbox-tags">${project.tags.map(t => `<span class="lightbox-tag">${escapeHtml(t)}</span>`).join("")}</div>
         <div class="lightbox-meta">
           <h4>Background 背景</h4>
-          <p>${escapeHtml(project.background.en)}<br>${escapeHtml(project.background.zh)}</p>
+          <p>${escapeHtml(project.background.en)}</p>
+          <p>${escapeHtml(project.background.zh)}</p>
           <h4>Solution 解決方案</h4>
-          <p>${escapeHtml(project.solution.en)}<br>${escapeHtml(project.solution.zh)}</p>
+          <p>${escapeHtml(project.solution.en)}</p>
+          <p>${escapeHtml(project.solution.zh)}</p>
         </div>
-      </div>
       <div class="lightbox-showcase">${videoHTML}${masonryHTML}</div>
     `;
 
@@ -282,6 +349,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+  // Bootstrap
+  updateNavOnScroll();
   initScrollAnimations();
   loadPortfolio();
 });
