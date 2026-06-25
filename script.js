@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ── Mobile Nav Toggle ─────────────────────────────────────
-  navToggle?.addEventListener("click", () => {
+  navToggle?.addEventListener("click", (e) => {
     const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", isOpen);
   });
 
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   navLinks?.querySelectorAll(".site-nav-link").forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("is-open");
+      navToggle.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
     });
   });
@@ -300,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const cleanUrl = item.split('?')[0].replace(/\/+$/, '');
           instagramEmbedsHTML += '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="' + escapeHtml(cleanUrl) + '" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:1px auto 1.5rem;max-width:540px;min-width:326px;padding:0;width:calc(100% - 2px)"><a href="' + escapeHtml(cleanUrl) + '" target="_blank" rel="noopener noreferrer">View on Instagram</a></blockquote>';
         } else if (isImageAsset(item)) {
-          masonryItems.push('<img src="' + escapeHtml(item) + '" alt="Showcase image" loading="lazy" onerror="this.onerror=null;this.style.display='none'">');
+          masonryItems.push(`<img src="${escapeHtml(item)}" alt="Showcase image" loading="lazy" onerror="this.onerror=null;this.style.display='none'">`);
         } else {
           const isUrl = item.startsWith("http://") || item.startsWith("https://");
           if (isUrl) {
@@ -363,6 +365,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ── Init ─────────────────────────────────────────────────
   function loadPortfolio() {
+    // Use inline data (supports file:// protocol where fetch is blocked)
+    if (window.__PROJECTS_DATA__) {
+      allProjects = window.__PROJECTS_DATA__;
+      buildFilters(allProjects);
+      renderGallery(allProjects);
+      initScrollAnimations();
+      return;
+    }
+
     fetch("projects.json")
       .then(r => { if (!r.ok) throw new Error("Failed to load"); return r.json(); })
       .then(projects => {

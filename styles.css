@@ -145,7 +145,14 @@ body {
   cursor: pointer;
   padding: 0.5rem;
   flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 44px;
+  min-height: 44px;
+  z-index: 101;
+  position: relative;
+  touch-action: manipulation;
 }
 
 .toggle-bar {
@@ -155,6 +162,20 @@ body {
   background: var(--alabaster);
   border-radius: 2px;
   transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+/* Hamburger → X animation */
+.site-nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.site-nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.site-nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 640px) {
