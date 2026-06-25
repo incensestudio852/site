@@ -14,17 +14,19 @@
     ],
     "keyVisual": "https://ugc.production.linktr.ee/nswSPr3R92aMjpFLjOxz_8J0Amw9y84UqvVBm",
     "background": {
-      "en": "The church was approaching its 60th anniversary with a website that had not been significantly updated in nearly 20 years. The pandemic had shifted most of their congregation online, so they needed a site that worked for both in-person and remote attendees.",
-      "zh": "慈光堂60周年堂慶前夕，原有網站已近20年未大幅更新。疫情後會眾習慣轉為線上參與，教會需要一個能同時服務實體與線上群體的網站。"
+      "en": "The church website had not been significantly updated in nearly 20 years. The pandemic had shifted most of their congregation online, so they needed a site that worked for both in-person and remote attendees.",
+      "zh": "慈光堂原有網站已近20年未大幅更新。疫情後會眾習慣轉為線上參與，教會需要一個能同時服務實體與線上群體的網站。"
     },
     "solution": {
-      "en": "We rebuilt the website on WordPress and synced it with the church's mobile app, so congregants receive real-time updates across both platforms. We also produced a 3-minute video tracing the church's missionary history, using archival research and location shoots to tell the story of how the church has sent people out over the decades.",
-      "zh": "以 WordPress 重建官方網站，並與教會手機應用程式同步，讓會眾即時接收最新資訊。團隊同時翻查歷史資料、實地拍攝，製作了一條3分鐘的敘事影片，記錄教會六十年來的宣教足跡。"
+      "en": "Approaching its 60th anniversary, we did a makeover to the website, rebuilt it on WordPress and at the same time, launched a church mobile app, so congregants receive real-time updates across both platforms. We also produced a 3-minute video tracing the church's missionary history, using archival research and location shoots to tell the story of how the church has sent people out over the decades.",
+      "zh": "適逢慈光堂60周年堂慶，工作室以 WordPress 重建官方網站，並協助教會推出手機應用程式，讓會眾即時接收最新資訊。團隊同時翻查歷史資料、實地拍攝，製作了一條3分鐘的敘事影片，讓會眾傳承群體六十年來的差傳使命。"
     },
-    "videoEmbed": "",
+    "videoEmbed": [],
     "showcase": [
       "tkbc-web.png",
-      "https://www.tkbc.org.hk/"
+      "https://www.tkbc.org.hk/",
+      "https://play-lh.googleusercontent.com/XanE9wfSys7z9LdIyVB1q3D85ntrlwEFrFf8k1cduFlcbdt3dC7ym9TuNFbVXj9yP98aHrwiidlql_t3RrKBqg=w5120-h2880-rw"
+      "https://apps.apple.com/gb/app/tkbc-%E6%85%88%E5%85%89%E5%A0%82-%E4%B8%80%E7%94%B2%E5%AD%90%E7%9A%84%E6%81%A9-%E8%B7%A8%E4%B8%96%E4%BB%A3%E7%9A%84%E5%A4%A2/id6451303625"
     ]
   },
   {
@@ -48,7 +50,9 @@
       "en": "For the 60th anniversary livestream, we asked congregants to handwrite individual characters of the church's slogan. We digitized each one and pieced them together into a collective standby screen, turning what is usually a placeholder into something the whole community contributed to.",
       "zh": "60周年堂慶直播前，我們邀請會眾各自手寫教會標語的一個字，再將所有字跡數位化、重新拼合，成為直播等待畫面。原本只是一個技術環節，變成了全體會眾的共同創作。"
     },
-    "videoEmbed": "https://www.youtube.com/embed/sUfolRB2bYQ"
+    "videoEmbed": [
+      "https://www.youtube.com/embed/sUfolRB2bYQ"
+    ]
   },
   {
     "projectId": "tkcsl",
@@ -70,7 +74,7 @@
       "en": "We built a standalone WordPress site that staff can update without technical help. The navigation organizes services by category and lists each district center's contact details. We pulled images from the organization's photo archive and matched the site colors to their existing logo, so the whole thing feels like one brand.",
       "zh": "以 WordPress 建立獨立網站，行政人員可自行更新內容。導航按服務類別分類，並列出各區中心的地址與聯絡方式。設計方面從機構相片庫選取真實影像，網站色調配合原有標誌，整體形象一致。"
     },
-    "videoEmbed": "",
+    "videoEmbed": [],
     "showcase": [
       "tkcsl-web.png",
       "https://tkcsl.org.hk/"
@@ -96,7 +100,9 @@
       "en": "We turned their existing content into a trilingual audio guide (Cantonese, English, Mandarin) using AI voice processing. Visitors can now go through the space at their own pace. We also enhance it to an immersive experience with audio engineering",
       "zh": "透過 AI 語音技術將現有內容轉化為粵、英、普三語聲音導賞，讓參觀者可按自己的節奏收聽講解。工作室更加入音效製作，提升體驗。"
     },
-    "videoEmbed": "https://www.youtube.com/embed/vmM8T14kL5k",
+    "videoEmbed": [
+      "https://www.youtube.com/embed/vmM8T14kL5k"
+    ],
     "showcase": [
       "",
       ""
@@ -123,7 +129,9 @@
       "en": "We produced the Holy Land Tour and Prayer Series, handling the full production pipeline including color grading and editing to give each episode a consistent look and feel.",
       "zh": "全盤製作《聖地遊禱系列》，從調色到剪接統一風格，讓每集保持一致的視覺質感。"
     },
-    "videoEmbed": "https://www.youtube.com/embed/51mFYNPr2rY&list=PLCM88weR6o_sb-bFTdbwmaNdyZO1MN1Nn",
+    "videoEmbed": [
+      "https://www.youtube.com/embed/51mFYNPr2rY&list=PLCM88weR6o_sb-bFTdbwmaNdyZO1MN1Nn"
+    ],
     "showcase": [
       "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop"
@@ -146,16 +154,18 @@
     "keyVisual": "",
     "background": {
       "en": "The running club had top-tier coaching but almost no online presence. Their early YouTube videos suffered from muddy audio, inconsistent visuals, and unfocused topics, with most struggling to reach even a few hundred views.",
-      "zh": "跑會雖有頂尖教練，數位知名度卻幾乎空白。早期 YouTube 影片主題鬆散、收音與畫面質素參差，每條影片觀看量長期停留數百次。"
+      "zh": "跑會雖然有頂尖教練，但數位知名度卻幾乎空白。早期的YouTube 影片主題鬆散、收音與畫面質素參差，每條影片觀看量長期停留數百次。"
     },
     "solution": {
-      "en": "From 2021 to 2024, we ran the channel end to end: planning, filming, writing, and designing thumbnails. We tightened the editing, added B-roll and on-screen graphics, and made the head coach the channel's technical voice. One gear guide comparing 18 HOKA shoes crossed 100K views. Later we added multi-camera livestream interviews with pro runners.",
-      "zh": "2021至2024年間，工作室全面營運頻道：內容企劃、拍攝、撰稿、縮圖設計一手包辦。剪接上加快節奏、加入B-roll與圖像輔助，將總教練定位為技術權威。一條18對HOKA跑鞋評測影片突破10萬觀看，後期更升級至多機直播訪問專業跑手。"
+      "en": "From 2021 to 2024, we ran the channel end to end: planning, filming, writing, and designing thumbnails. We tightened the editing, added B-roll and on-screen graphics, and made the head coach the channel's technical voice. One gear review comparing 18 HOKA shoes crossed 100K views. Later we even host a multi-camera livestream interviews with pro runners.",
+      "zh": "2021至2024年間，工作室全面營運頻道：內容企劃、拍攝、撰稿、縮圖設計一手包辦。剪接上加快節奏、加入B-roll與圖像輔助，將總教練定位為技術權威。一條18對HOKA跑鞋橫向評測的影片更突破10萬觀看，後期更升級至多機位直播訪問專業跑手。"
     },
-    "videoEmbed": "",
-    "showcase": [
-      "https://www.youtube.com/watch?v=SBBFwzeM3Nk",
+    "videoEmbed": [
+      "https://www.youtube.com/embed/OIP0xG6xpdE",
       "https://www.youtube.com/embed/-dVGESYqdKg"
+    ],
+    "showcase": [
+      ""
     ]
   },
   {
@@ -179,14 +189,14 @@
       "zh": "豐山跑（CRC）希望在賽季中以專業越野跑社群的形象示人，需要專屬跑衣提升賽道辨識度，以及賽事期間的社交媒體營運。"
     },
     "solution": {
-      "en": "We kept the club's existing colors and designed two singlet styles, working with a manufacturer to get the breathability right for long trail runs. The Lion Rock silhouette runs across the chest with the club slogan underneath. Runners wore them during Oxfam Trailwalker, and visibility on the course was night and day. During HK4TUC, we ran CRC's Instagram with live tracking of the coach and runners, turning race data into posts the local running community actually followed.",
-      "zh": "保留跑會原有配色，設計了兩款跑步背心，與廠商合作確保透氣快乾適合長途越野。「獅子山」線條橫跨胸前，配上跑會口號。選手在毅行者中穿著出戰，賽道辨識度大幅提升。HK4TUC 期間全程營運跑會 Instagram，實時追蹤教練與選手位置，將賽事數據轉化為跑界關注的內容。"
+      "en": "We kept the club's existing colors and designed two singlet styles, working with a manufacturer to get the breathability right for long trail runs. The Lion Rock silhouette runs across the chest with the club slogan underneath. Runners wore them during Oxfam Trailwalker, and visibility on the course was night and day. During Hong Kong Four Trails Ultra Challenge (HK4TUC), we ran CRC's Instagram with live tracking of the coach and runners, turning race data into posts the local running community actually followed.",
+      "zh": "工作室在秉承跑會原有的配色和風格情況下，為跑會設計了兩款跑步背心。並協助尋找生產廠商，確保背心透氣快乾，適合越野比賽。「獅子山」線條橫跨胸前，配上跑會口號。選手在毅行者中穿著出戰，賽道辨識度大幅提升。另外，在香港四徑超級挑戰(HK4TUC) 期間，工作室全程營運跑會 Instagram，實時追蹤教練與選手位置，將賽事數據轉化為跑界關注的內容。"
     },
-    "videoEmbed": "https://www.youtube.com/embed/-dVGESYqdKg&list=PLTM_EokNkwCThOEuwFw5_cwISDNLefSr4&index=4",
+    "videoEmbed": [],
     "showcase": [
-      "[Insert Apparel Photo URL]",
-      "https://www.instagram.com/p/CnxI3AiPxs6/?igsh=MTFydG9uMWdrNzE0Mg==",
-      "[Insert Livestream Screenshot URL]"
+      "crc-tank-showcase.jpg",
+      "crc-tank-showcase2.jpg",
+      "https://www.instagram.com/p/CnxI3AiPxs6/?igsh=MTFydG9uMWdrNzE0Mg=="
     ]
   }
 ]

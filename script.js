@@ -275,8 +275,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const project = allProjects.find(p => p.projectId === id);
     if (!project) return;
 
-    const videoHTML = project.videoEmbed
-      ? `<div class="modal-video-container"><iframe src="${project.videoEmbed}" allowfullscreen></iframe></div>`
+    const videos = Array.isArray(project.videoEmbed) ? project.videoEmbed : [];
+    const videoHTML = videos.length
+      ? (videos.length > 1
+          ? `<div class="modal-video-grid">${videos.map(url =>
+              `<div class="modal-video-container"><iframe src="${escapeHtml(url)}" allowfullscreen></iframe></div>`
+            ).join("")}</div>`
+          : `<div class="modal-video-container"><iframe src="${escapeHtml(videos[0])}" allowfullscreen></iframe></div>`
+        )
       : "";
 
     function isImageAsset(str) {
