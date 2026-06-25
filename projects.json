@@ -39,7 +39,7 @@
       "直播製作 Livestream Production",
       "視覺設計 Visual Design"
     ],
-    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/04/TKCSL_logo.png",
+    "keyVisual": "",
     "background": {
       "en": "Pandemic restrictions forced the church to move its services online. They needed help making the transition feel intentional rather than makeshift.",
       "zh": "疫情限制下，教會需將聚會移至網上直播。工作室與教會團隊合作，確保過渡期間的聚會體驗不中斷。"
@@ -61,7 +61,7 @@
       "網頁設計 Web Design",
       "介面設計 UI/UX Design"
     ],
-    "keyVisual": "tkcsl-web.png",
+    "keyVisual": "https://tkbc.org.hk/wp-content/uploads/2023/04/TKCSL_logo.png",
     "background": {
       "en": "The organization runs community services across multiple age groups. As they expanded from Kowloon City into other districts, their old setup (a page on the parent church's website) made it hard for people to find the help they needed.",
       "zh": "機構的社區服務遍及不同年齡層，近年由九龍城擴展至多區。但一直依附母會網站，沒有獨立平台，求助者往往找不到所需資訊。"
@@ -87,19 +87,19 @@
       "內容企劃 Content Strategy",
       "音訊製作 Audio Production"
     ],
-    "keyVisual": "[Insert Key Visual Image URL]",
+    "keyVisual": "https://static.wixstatic.com/media/15407d_167c3226d7e9471aa4de4758c4334d6e~mv2.png",
     "background": {
       "en": "The prayer house had good material but not enough staff to give every visitor a guided tour, especially in multiple languages.",
       "zh": "西北祈禱院內容豐富，但人手不足以提供多語言導賞，影響參觀體驗。"
     },
     "solution": {
-      "en": "We turned their existing content into a trilingual audio guide (Cantonese, English, Mandarin) using AI voice processing and audio engineering. Visitors can now go through the space at their own pace.",
-      "zh": "將現有內容轉化為粵、英、普三語聲音導賞，透過 AI 語音技術與音效製作，讓參觀者可按自己的節奏收聽講解。"
+      "en": "We turned their existing content into a trilingual audio guide (Cantonese, English, Mandarin) using AI voice processing. Visitors can now go through the space at their own pace. We also enhance it to an immersive experience with audio engineering",
+      "zh": "透過 AI 語音技術將現有內容轉化為粵、英、普三語聲音導賞，讓參觀者可按自己的節奏收聽講解。工作室更加入音效製作，提升體驗。"
     },
     "videoEmbed": "https://www.youtube.com/embed/vmM8T14kL5k",
     "showcase": [
-      "[Insert Before/After Video URL]",
-      "[Insert Audio Sample URL]"
+      "",
+      ""
     ]
   },
   {

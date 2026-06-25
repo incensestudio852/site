@@ -76,7 +76,7 @@ body {
   gap: 0.5rem;
   text-decoration: none;
   color: var(--alabaster);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -94,11 +94,13 @@ body {
 
 .site-nav-brand {
   display: none;
+  font-size: 1rem;
 }
 
 @media (min-width: 480px) {
   .site-nav-brand {
     display: inline;
+    font-size: 1rem;
   }
 }
 
@@ -652,7 +654,7 @@ body {
 
 /* Image Fallback Placeholder */
 .portfolio-card.img-fallback {
-  background: linear-gradient(145deg, #FAFAFA 0%, #F2F2F5 100%);
+  background: var(--ash-soft);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -660,6 +662,17 @@ body {
 
 .portfolio-card.img-fallback.hidden {
   display: none;
+}
+
+.portfolio-card.no-visual {
+  background: var(--ash-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-card.no-visual .portfolio-card-overlay {
+  display: block;
 }
 
 .card-type-label {
@@ -682,9 +695,17 @@ body {
   display: flex;
 }
 
-.portfolio-card.img-fallback .portfolio-card-overlay,
+.portfolio-card.img-fallback .portfolio-card-overlay {
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.01) 45%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
 .portfolio-card.img-fallback .portfolio-card-content {
-  display: none;
+  display: flex;
 }
 
 /* Carousel Hint Text */
@@ -909,6 +930,15 @@ p.fade-up        { transition-delay: 0.15s; }
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+}
+
+.lightbox-client {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
 }
 
 .lightbox-meta h4 {
