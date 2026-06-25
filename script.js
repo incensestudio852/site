@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks        = document.querySelector(".site-nav-links");
 
   let allProjects = [];
+  let filteredProjects = [];
+  let currentFilter = "All";
+  let currentProjectIndex = -1;
 
   // ── Helpers ───────────────────────────────────────────────
   function escapeHtml(v) {
@@ -122,6 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ── Render Cards & Dots ──────────────────────────────────
   function renderGallery(projects) {
     if (!preview) return;
+    filteredProjects = [...projects];
+    currentFilter = "All";
 
     preview.innerHTML = projects
       .map(p => {
@@ -221,6 +226,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ── Filter Logic ─────────────────────────────────────────
   function applyFilter(filter) {
+    currentFilter = filter;
+    filteredProjects = allProjects.filter(p => {
+      const cats = Array.isArray(p.category) ? p.category : [p.category];
+      return filter === "All" || cats.includes(filter);
+    });
     const cards = preview.querySelectorAll(".portfolio-card");
     let visibleCount = 0;
 
@@ -256,6 +266,52 @@ document.addEventListener("DOMContentLoaded", () => {
   if (arrowLeft)  arrowLeft.addEventListener("click", () => scrollByStep(-1));
   if (arrowRight) arrowRight.addEventListener("click", () => scrollByStep(1));
 
+
+  // ── Lightbox Arrow Buttons ────────────────────────────────
+  const lightboxArrowLeft = document.createElement("button");
+  lightboxArrowLeft.className = "lightbox-arrow lightbox-arrow--left";
+  lightboxArrowLeft.setAttribute("aria-label", "Previous project");
+  lightboxArrowLeft.innerHTML = "‹";
+
+  const lightboxArrowRight = document.createElement("button");
+  lightboxArrowRight.className = "lightbox-arrow lightbox-arrow--right";
+  lightboxArrowRight.setAttribute("aria-label", "Next project");
+  lightboxArrowRight.innerHTML = "›";
+
+  const lightboxWrapper = document.querySelector(".lightbox-content-wrapper");
+  if (lightboxWrapper) {
+    lightboxWrapper.appendChild(lightboxArrowLeft);
+    lightboxWrapper.appendChild(lightboxArrowRight);
+  }
+
+  lightboxArrowLeft.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navigateLightbox(-1);
+  });
+
+  lightboxArrowRight.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navigateLightbox(1);
+  });
+
+  // ── Lightbox Touch Swipe ──────────────────────────────────
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  modalContent.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  modalContent.addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    const dy = e.changedTouches[0].screenY - touchStartY;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 2) {
+      if (dx < 0) navigateLightbox(1);
+      else navigateLightbox(-1);
+    }
+  }, { passive: true });
+
   // ── Preview scroll events ────────────────────────────────
   if (preview) {
     preview.addEventListener("scroll", onPreviewScroll, { passive: true });
@@ -264,16 +320,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ── Keyboard nav ─────────────────────────────────────────
   document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) closeLightbox();
+
+    if (modal.classList.contains("is-open")) {
+      if (e.key === "ArrowLeft")  { e.preventDefault(); navigateLightbox(-1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); navigateLightbox(1); }
+    }
+
     if (document.activeElement?.closest(".portfolio-gallery")) {
       if (e.key === "ArrowLeft")  { e.preventDefault(); scrollByStep(-1); }
       if (e.key === "ArrowRight") { e.preventDefault(); scrollByStep(1); }
     }
   });
 
+
+  // ── Lightbox Navigation ───────────────────────────────────
+  function navigateLightbox(dir) {
+    if (filteredProjects.length <= 1) return;
+
+    const newIndex = (currentProjectIndex + dir + filteredProjects.length) % filteredProjects.length;
+    const newProject = filteredProjects[newIndex];
+
+    // Sync carousel scroll
+    const cards = preview.querySelectorAll(".portfolio-card:not(.hidden)");
+    if (cards[newIndex]) {
+      cards[newIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+      syncActiveDot();
+    }
+
+    openLightbox(newProject.projectId);
+  }
   // ── Lightbox ─────────────────────────────────────────────
   function openLightbox(id) {
     const project = allProjects.find(p => p.projectId === id);
     if (!project) return;
+    currentProjectIndex = filteredProjects.findIndex(p => p.projectId === project.projectId);
 
     const videos = Array.isArray(project.videoEmbed) ? project.videoEmbed : [];
     const videoHTML = videos.length
@@ -334,10 +415,16 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${escapeHtml(project.solution.zh)}</p>
         </div>
       </div>
+        ${filteredProjects.length > 1 ? `<div class="lightbox-counter">${currentProjectIndex + 1} / ${filteredProjects.length}</div>` : ""}
     `;
 
     modal.classList.add("is-open");
     document.body.style.overflow = "hidden";
+
+    // Show/hide lightbox arrows based on filtered count
+    const showArrows = filteredProjects.length > 1;
+    lightboxArrowLeft.style.display = showArrows ? "" : "none";
+    lightboxArrowRight.style.display = showArrows ? "" : "none";
 
     // Process Instagram embeds
     if (modalContent.querySelector('.instagram-media')) {
@@ -354,14 +441,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function closeLightbox() {
     modal.classList.remove("is-open");
     document.body.style.overflow = "";
+    currentProjectIndex = -1;
     setTimeout(() => { modalContent.innerHTML = ""; }, 300);
   }
 
   modalClose?.addEventListener("click", closeLightbox);
   modalOverlay?.addEventListener("click", closeLightbox);
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape" && modal.classList.contains("is-open")) closeLightbox();
-  });
 
   // ── Init ─────────────────────────────────────────────────
   function loadPortfolio() {
