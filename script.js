@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
       <div class="lightbox-cta-row">
-        <a href="#contact" class="lightbox-cta-pill" onclick="closeLightbox()">Like what you see? Let's talk</a>
+        <a href="#contact" class="lightbox-cta-pill">Like what you see? Let's talk</a>
       </div>
         ${filteredProjects.length > 1 ? `<div class="lightbox-counter">${currentProjectIndex + 1} / ${filteredProjects.length}</div>` : ""}
     `;
@@ -447,6 +447,18 @@ document.addEventListener("DOMContentLoaded", () => {
         s.src = '//www.instagram.com/embed.js';
         document.body.appendChild(s);
       }
+    }
+
+    // Lightbox CTA: close modal then scroll to contact
+    var ctaPill = document.querySelector('.lightbox-cta-pill');
+    if (ctaPill) {
+      ctaPill.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeLightbox();
+        setTimeout(function() {
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }, 350);
+      });
     }
   }
 
