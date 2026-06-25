@@ -864,6 +864,15 @@ body {
 }
 
 /* ─── Apple-style Pill Buttons ─── */
+.cta-signature {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--gold);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
 .cta-actions {
   margin-top: 2.5rem;
   display: flex;
@@ -900,7 +909,7 @@ body {
 }
 
 .btn-outline {
-  border: 1px solid rgba(250, 250, 248, 0.45);
+  border: 1px solid rgba(250, 250, 248, 0.25);
   color: var(--alabaster);
   background: transparent;
 }
