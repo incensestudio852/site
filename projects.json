@@ -23,9 +23,9 @@
     },
     "videoEmbed": [],
     "showcase": [
-      "tkbc-web.png",
+      "image/tkbc-web.webp",
       "https://www.tkbc.org.hk/",
-      "https://play-lh.googleusercontent.com/XanE9wfSys7z9LdIyVB1q3D85ntrlwEFrFf8k1cduFlcbdt3dC7ym9TuNFbVXj9yP98aHrwiidlql_t3RrKBqg=w5120-h2880-rw"
+      "https://play-lh.googleusercontent.com/XanE9wfSys7z9LdIyVB1q3D85ntrlwEFrFf8k1cduFlcbdt3dC7ym9TuNFbVXj9yP98aHrwiidlql_t3RrKBqg=w5120-h2880-rw",
       "https://apps.apple.com/gb/app/tkbc-%E6%85%88%E5%85%89%E5%A0%82-%E4%B8%80%E7%94%B2%E5%AD%90%E7%9A%84%E6%81%A9-%E8%B7%A8%E4%B8%96%E4%BB%A3%E7%9A%84%E5%A4%A2/id6451303625"
     ]
   },
@@ -76,7 +76,7 @@
     },
     "videoEmbed": [],
     "showcase": [
-      "tkcsl-web.png",
+      "image/tkcsl-web.webp",
       "https://tkcsl.org.hk/"
     ]
   },
@@ -103,10 +103,7 @@
     "videoEmbed": [
       "https://www.youtube.com/embed/vmM8T14kL5k"
     ],
-    "showcase": [
-      "",
-      ""
-    ]
+    "showcase": []
   },
   {
     "projectId": "khm",
@@ -165,7 +162,7 @@
       "https://www.youtube.com/embed/-dVGESYqdKg"
     ],
     "showcase": [
-      ""
+        "image/YT_views.png"
     ]
   },
   {
@@ -194,8 +191,8 @@
     },
     "videoEmbed": [],
     "showcase": [
-      "crc-tank-showcase.jpg",
-      "crc-tank-showcase2.jpg",
+      "image/crc-tank-showcase.jpg",
+      "image/crc-tank-showcase2.jpg",
       "https://www.instagram.com/p/CnxI3AiPxs6/?igsh=MTFydG9uMWdrNzE0Mg=="
     ]
   }

@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks        = document.querySelector(".site-nav-links");
 
   let allProjects = [];
-  let rafPending  = false;
-  let lastScrollY = window.scrollY;
 
   // ── Helpers ───────────────────────────────────────────────
   function escapeHtml(v) {
@@ -297,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let masonryItems = [];
 
     if (project.showcase?.length) {
-      project.showcase.forEach(item => {
+      project.showcase.filter(Boolean).forEach(item => {
         if (isInstagramUrl(item)) {
           const cleanUrl = item.split('?')[0].replace(/\/+$/, '');
           instagramEmbedsHTML += '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="' + escapeHtml(cleanUrl) + '" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:1px auto 1.5rem;max-width:540px;min-width:326px;padding:0;width:calc(100% - 2px)"><a href="' + escapeHtml(cleanUrl) + '" target="_blank" rel="noopener noreferrer">View on Instagram</a></blockquote>';
@@ -343,7 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (modalContent.querySelector('.instagram-media')) {
       if (window.instgrm) {
         try { window.instgrm.Embeds.process(); } catch(e) {}
-      } else {
+      } else if (!document.querySelector('script[src="//www.instagram.com/embed.js"]')) {
         var s = document.createElement('script');
         s.src = '//www.instagram.com/embed.js';
         document.body.appendChild(s);

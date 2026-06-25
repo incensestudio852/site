@@ -675,6 +675,9 @@ body {
 }
 
 /* Image Fallback Placeholder */
+.portfolio-card.hidden {
+  display: none;
+}
 .portfolio-card.img-fallback {
   background: var(--ash-soft);
 }
