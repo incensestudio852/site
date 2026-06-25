@@ -160,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderDots(projects.length);
     syncActiveDot();
+    updateScrollEnd();
   }
 
   function renderDots(count) {
@@ -222,6 +223,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function onPreviewScroll() {
     clearTimeout(previewScrollTimer);
     previewScrollTimer = setTimeout(syncActiveDot, 60);
+    updateScrollEnd();
+  }
+
+  function updateScrollEnd() {
+    if (!preview || !preview.parentElement) return;
+    const atEnd = preview.scrollLeft + preview.clientWidth >= preview.scrollWidth - 2;
+    preview.parentElement.classList.toggle("is-at-scroll-end", atEnd);
   }
 
   // ── Filter Logic ─────────────────────────────────────────
@@ -260,6 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     preview.scrollTo({ left: 0, behavior: "smooth" });
     syncActiveDot();
+    updateScrollEnd();
   }
 
   // ── Arrow Button Clicks ──────────────────────────────────
@@ -315,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ── Preview scroll events ────────────────────────────────
   if (preview) {
     preview.addEventListener("scroll", onPreviewScroll, { passive: true });
-    preview.addEventListener("scrollend", syncActiveDot, { passive: true });
+    preview.addEventListener("scrollend", () => { syncActiveDot(); updateScrollEnd(); }, { passive: true });
   }
 
   // ── Keyboard nav ─────────────────────────────────────────
@@ -414,6 +423,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${escapeHtml(project.solution.en)}</p>
           <p>${escapeHtml(project.solution.zh)}</p>
         </div>
+      </div>
+      <div class="lightbox-cta-row">
+        <a href="#contact" class="lightbox-cta-pill" onclick="closeLightbox()">Like what you see? Let's talk</a>
       </div>
         ${filteredProjects.length > 1 ? `<div class="lightbox-counter">${currentProjectIndex + 1} / ${filteredProjects.length}</div>` : ""}
     `;
